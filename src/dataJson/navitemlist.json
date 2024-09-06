@@ -1,0 +1,81 @@
+[
+    {
+        "title": "Home",
+        "link": "/",
+        "key": "home"
+    },
+    {
+        "title": "About",
+        "link": "/about",
+        "key": "about"
+    },
+    {
+        "title": "Service",
+        "link": "/service",
+        "key": "service",
+        "childern": [
+            {
+                "title": "Service",
+                "link": "/service",
+                "key": "service1"
+            },
+            {
+                "title": "Service Two",
+                "link": "/service-two",
+                "key": "servicetwo"
+            }
+        ]
+    },
+    {
+        "title": "Blog",
+        "link": "/blog",
+        "key": "blog"
+    },
+    {
+        "title": "Pages",
+        "link": "#",
+        "key": "pages",
+        "childern": [
+            {
+                "title": "Team",
+                "link": "/team",
+                "key": "team"
+            },
+            {
+                "title": "Appointment",
+                "link": "/appointment",
+                "key": "appointment"
+            },
+            {
+                "title": "Pricing",
+                "link": "/pricing",
+                "key": "pricing"
+            },
+            {
+                "title": "Testimonial",
+                "link": "/testimonial",
+                "key": "testimonial"
+            },
+            {
+                "title": "Gallery",
+                "link": "/gallery",
+                "key": "gallery"
+            },
+            {
+                "title": "Faq",
+                "link": "/faq",
+                "key": "faq"
+            },
+            {
+                "title": "Comming Soon",
+                "link": "/comming-soon",
+                "key": "commingsoon"
+            }
+        ]
+    },
+    {
+        "title": "Contact",
+        "link": "/contact",
+        "key": "contact"
+    }
+]

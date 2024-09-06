@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "img": "/assets/img/service/service_1.jpg",
+        "title": "Performance Upgrades and Customization",
+        "desp": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan."
+    },
+    {
+        "id": 2,
+        "img": "/assets/img/service/service_2.jpg",
+        "title": "Engine Diagnostics and Repair",
+        "desp": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan."
+    },
+    {
+        "id": 3,
+        "img": "/assets/img/service/service_3.jpg",
+        "title": "Tire Services",
+        "desp": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan."
+    },
+    {
+        "id": 4,
+        "img": "/assets/img/service/service_4.jpg",
+        "title": "Brake Repair and Maintenance",
+        "desp": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan."
+    },
+    {
+        "id": 5,
+        "img": "/assets/img/service/service_5.jpg",
+        "title": "Oil Change Services",
+        "desp": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan."
+    }
+]

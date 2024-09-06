@@ -1,0 +1,15 @@
+.pagination-style {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  color: $white;
+  font-size: 22px;
+  cursor: pointer;
+  .current {
+    color: $primary;
+  }
+  .current.next,
+  .current.prev {
+    color: $white;
+  }
+}

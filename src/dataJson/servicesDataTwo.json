@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "title": "Diagnostic Services",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "icon": "/assets/img/icon/service-icon-1.svg"
+    },
+    {
+        "id": 2,
+        "title": "Routine Maintenance",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "icon": "/assets/img/icon/service-icon-2.svg"
+    },
+    {
+        "id": 3,
+        "title": "Brake System Repair",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "icon": "/assets/img/icon/service-icon-3.svg"
+    },
+    {
+        "id": 4,
+        "title": "Engine Repair",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "icon": "/assets/img/icon/service-icon-4.svg"
+    },
+    {
+        "id": 5,
+        "title": "Transmission Services",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "icon": "/assets/img/icon/service-icon-5.svg"
+    },
+    {
+        "id": 6,
+        "title": "Electrical System",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "icon": "/assets/img/icon/service-icon-6.svg"
+    },
+    {
+        "id": 7,
+        "title": "Steering Repair",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "icon": "/assets/img/icon/service-icon-7.svg"
+    },
+    {
+        "id": 8,
+        "title": "Heating Services",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "icon": "/assets/img/icon/service-icon-8.svg"
+    },
+    {
+        "id": 9,
+        "title": "Tire Services",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "icon": "/assets/img/icon/service-icon-9.svg"
+    }
+]

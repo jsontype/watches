@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "name": "Darrell T. Beedle",
+        "title": "Lead Mechanic",
+        "image": "/assets/img/member/member_1.jpg",
+        "desp": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected humour, or randomised. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected humour, or randomised.",
+        "socialLinks": {
+            "linkedin": "https://www.facebook.com/",
+            "facebook": "https://bd.linkedin.com/",
+            "twitter": "https://www.instagram.com/"
+        },
+        "contact": {
+            "address": "2118 Thornridge Cir, 35624",
+            "email": "example@example.com",
+            "phone": "+7 (903) 679-96-15",
+            "website": "www.website.com"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Michael Jack",
+        "title": "Service Advisor",
+        "image": "/assets/img/member/member_2.jpg",
+        "desp": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "socialLinks": {
+            "linkedin": "https://www.facebook.com/",
+            "facebook": "https://bd.linkedin.com/",
+            "twitter": "https://www.instagram.com/"
+        },
+        "contact": {
+            "address": "2118 Thornridge Cir, 35624",
+            "email": "example@example.com",
+            "phone": "+7 (903) 679-96-15",
+            "website": "www.website.com"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Cathy Sparkman",
+        "title": "Diagnostic Technician",
+        "image": "/assets/img/member/member_3.jpg",
+        "desp": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "socialLinks": {
+            "linkedin": "https://www.facebook.com/",
+            "facebook": "https://bd.linkedin.com/",
+            "twitter": "https://www.instagram.com/"
+        },
+        "contact": {
+            "address": "2118 Thornridge Cir, 35624",
+            "email": "example@example.com",
+            "phone": "+7 (903) 679-96-15",
+            "website": "www.website.com"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Charles G. Macdonald",
+        "title": "System Technician",
+        "image": "/assets/img/member/member_4.jpg",
+        "desp": "Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "socialLinks": {
+            "linkedin": "https://www.facebook.com/",
+            "facebook": "https://bd.linkedin.com/",
+            "twitter": "https://www.instagram.com/"
+        },
+        "contact": {
+            "address": "2118 Thornridge Cir, 35624",
+            "email": "example@example.com",
+            "phone": "+7 (903) 679-96-15",
+            "website": "www.website.com"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Anthony M. Lass",
+        "title": "Systems Specialist",
+        "image": "/assets/img/member/member_5.jpg",
+        "desp": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+        "socialLinks": {
+            "linkedin": "https://www.facebook.com/",
+            "facebook": "https://bd.linkedin.com/",
+            "twitter": "https://www.instagram.com/"
+        },
+        "contact": {
+            "address": "2118 Thornridge Cir, 35624",
+            "email": "example@example.com",
+            "phone": "+7 (903) 679-96-15",
+            "website": "www.website.com"
+        }
+    },
+    {
+        "id": 6,
+        "name": "Tyra Crawford",
+        "title": "Lead Mechanic",
+        "image": "/assets/img/member/member_6.jpg",
+        "desp": "Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage.",
+        "socialLinks": {
+            "linkedin": "https://www.facebook.com/",
+            "facebook": "https://bd.linkedin.com/",
+            "twitter": "https://www.instagram.com/"
+        },
+        "contact": {
+            "address": "2118 Thornridge Cir, 35624",
+            "email": "example@example.com",
+            "phone": "+7 (903) 679-96-15",
+            "website": "www.website.com"
+        }
+    }
+]

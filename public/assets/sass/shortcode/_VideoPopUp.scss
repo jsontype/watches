@@ -1,0 +1,28 @@
+.video-section {
+  position: relative;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  align-items: center;
+  .video-section-bg-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .modal-video {
+    position: fixed !important;
+    background-color: transparent;
+    .modal-video-body {
+      max-width: 1460px;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .video-section {
+    height: 50vh !important;
+  }
+}
