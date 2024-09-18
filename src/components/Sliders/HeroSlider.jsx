@@ -27,7 +27,7 @@ const sliderData = [
     maintitle: "販売・買取",
     desp: " 腕時計の販売・買取も行なっております。",
     url: "/appointment",
-    img: "/assets/img/hero/hero_slider_bg_1.png",
+    img: "/assets/img/hero/hero_slider_bg_3.png",
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ const sliderData = [
     maintitle: "自社の時計開発",
     desp: " 技術をより磨くために、自社の時計も開発しております。お気に入れの時計があれば、ぜひお問い合わせください。",
     url: "/appointment",
-    img: "/assets/img/hero/hero_slider_bg_2.png",
+    img: "/assets/img/hero/hero_slider_bg_4.png",
   },
 ];
 
