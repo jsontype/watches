@@ -24,15 +24,18 @@
       margin-top: 0%;
     }
     .hero-main-title {
+      white-space: nowrap;
       text-transform: uppercase;
     }
     .hero-main-title-1 {
+      font-size: 30px;
       text-transform: uppercase;
     }
     .mini-title {
       max-width: 560px;
       font-size: 18px;
       line-height: 27px;
+      white-space: pre-line;
     }
   }
 }
