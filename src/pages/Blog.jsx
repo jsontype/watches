@@ -1,29 +1,29 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 
-import BlogCard from "../components/Blog/BlogCard";
-import CommonPageHero from "../components/CommonPageHero/CommonPageHero";
-import BlogFeature from "../components/Blog/BlogFeature";
-import Pagination from "../components/Pagination/Pagination";
+import BlogCard from '../components/Blog/BlogCard'
+import CommonPageHero from '../components/CommonPageHero/CommonPageHero'
+import BlogFeature from '../components/Blog/BlogFeature'
+import Pagination from '../components/Pagination/Pagination'
 
-import blogsData from "../dataJson/blogsData.json";
+import blogsData from '../dataJson/blogsData.json'
 
 const Blog = () => {
-  const [currentPage, setCurrentPage] = useState(1);
-  const postsPerPage = 6;
+  const [currentPage, setCurrentPage] = useState(1)
+  const postsPerPage = 6
 
-  const totalPages = Math.ceil(blogsData.length / postsPerPage);
+  const totalPages = Math.ceil(blogsData.length / postsPerPage)
 
-  const indexOfLastPost = currentPage * postsPerPage;
-  const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = blogsData.slice(indexOfFirstPost, indexOfLastPost);
+  const indexOfLastPost = currentPage * postsPerPage
+  const indexOfFirstPost = indexOfLastPost - postsPerPage
+  const currentPosts = blogsData.slice(indexOfFirstPost, indexOfLastPost)
 
-  const handlePageChange = (pageNumber) => {
-    setCurrentPage(pageNumber);
-  };
+  const handlePageChange = pageNumber => {
+    setCurrentPage(pageNumber)
+  }
 
   return (
     <>
-      <CommonPageHero title={"Blogs"} />
+      <CommonPageHero title={'Blogs'} />
       <BlogFeature />
       <div className="container">
         <div className="ak-height-50 ak-height-lg-50"></div>
@@ -39,7 +39,7 @@ const Blog = () => {
         />
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Blog;
+export default Blog

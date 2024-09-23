@@ -1,63 +1,63 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import TextAnimation from "../../components/TextAnimation/TextAnimation";
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+import TextAnimation from '../../components/TextAnimation/TextAnimation'
 
-import footerLogo from "/assets/img/icon/footer-logo.svg";
+import footerLogo from '/assets/img/icon/footer-logo.svg'
 
 const footerDataArray = [
   {
-    className: "footer-info",
-    dataAosDelay: "0",
-    phone: "(406) 555-0120",
+    className: 'footer-info',
+    dataAosDelay: '0',
+    phone: '(406) 555-0120',
     desp: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan. Lorem Ipsum is.",
   },
   {
-    className: "footer-menu-one",
-    dataAosDelay: "50",
+    className: 'footer-menu-one',
+    dataAosDelay: '50',
     links: [
-      { title: "About", link: "/about" },
-      { title: "Service", link: "/service" },
-      { title: "Pricing", link: "/pricing" },
-      { title: "Team", link: "/team" },
-      { title: "Contact Us", link: "/contact" },
+      { title: 'About', link: '/about' },
+      { title: 'Service', link: '/service' },
+      { title: 'Pricing', link: '/pricing' },
+      { title: 'Team', link: '/team' },
+      { title: 'Contact Us', link: '/contact' },
     ],
   },
   {
-    className: "footer-menu-two",
-    dataAosDelay: "100",
+    className: 'footer-menu-two',
+    dataAosDelay: '100',
     links: [
-      { title: "Appointment", link: "/appointment" },
-      { title: "Blog / News", link: "/blog" },
-      { title: "FA Question", link: "/faq" },
-      { title: "Team", link: "/team" },
+      { title: 'Appointment', link: '/appointment' },
+      { title: 'Blog / News', link: '/blog' },
+      { title: 'FA Question', link: '/faq' },
+      { title: 'Team', link: '/team' },
     ],
   },
   {
-    className: "footer-address",
-    dataAosDelay: "150",
-    address: "901 N Pitt Str., Suite 170 Alexandria, NY, USA",
-    email: "example@email.com",
+    className: 'footer-address',
+    dataAosDelay: '150',
+    address: '901 N Pitt Str., Suite 170 Alexandria, NY, USA',
+    email: 'example@email.com',
   },
-];
+]
 
 const Footer = () => {
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = e => {
+    e.preventDefault()
     if (validateEmail(email)) {
-      setMessage("Thank you for subscribing!");
-      setEmail("");
+      setMessage('Thank you for subscribing!')
+      setEmail('')
     } else {
-      setMessage("Please enter a valid email address.");
+      setMessage('Please enter a valid email address.')
     }
-  };
+  }
 
-  const validateEmail = (email) => {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(String(email).toLowerCase());
-  };
+  const validateEmail = email => {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    return re.test(String(email).toLowerCase())
+  }
 
   return (
     <>
@@ -82,8 +82,7 @@ const Footer = () => {
             </div>
             <div className="footer-heading-email">
               <h5 className="email-title">
-                Sign up for our newsletter to get weekly updates on exclusive
-                offers and discounts!
+                Sign up for our newsletter to get weekly updates on exclusive offers and discounts!
               </h5>
               <div>
                 <p id="ak-alert-footer">{message}</p>
@@ -95,7 +94,7 @@ const Footer = () => {
                     placeholder="Enter your email..."
                     className="email-input"
                     value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    onChange={e => setEmail(e.target.value)}
                     required
                   />
                   <button type="submit" className="submit-btn">
@@ -147,7 +146,7 @@ const Footer = () => {
                         </Link>
                       </div>
                       <TextAnimation
-                        link={"tel:(406)555-0120"}
+                        link={'tel:(406)555-0120'}
                         title={item.phone}
                         classNamePass="phone white"
                       />
@@ -172,10 +171,7 @@ const Footer = () => {
                     <p className="adress-title">LOCATION & CONTACT</p>
                     <Link to="#" className="location">
                       <span className="me-1">
-                        <img
-                          src="/assets/img/icon/location.svg"
-                          alt="Location"
-                        />
+                        <img src="/assets/img/icon/location.svg" alt="Location" />
                       </span>
                       {item.address}
                     </Link>
@@ -187,10 +183,7 @@ const Footer = () => {
                     </Link>
                     <p className="date">
                       <span className="me-1">
-                        <img
-                          src="/assets/img/icon/calender.svg"
-                          alt="Calendar"
-                        />
+                        <img src="/assets/img/icon/calender.svg" alt="Calendar" />
                       </span>
                       Sun - Thu: Open 24/7
                     </p>
@@ -202,9 +195,7 @@ const Footer = () => {
           <div className="ak-height-70 ak-height-lg-30"></div>
           <div className="primary-color-border"></div>
           <div className="copy-right">
-            <p className="title  text-hover-animaiton">
-              Copyright 2024, All Right reserved
-            </p>
+            <p className="title  text-hover-animaiton">Copyright 2024, All Right reserved</p>
             <div className="social-icon">
               <Link to="https://www.facebook.com/">
                 <img src="/assets/img/icon/facebookicon.svg" alt="..." />
@@ -220,7 +211,7 @@ const Footer = () => {
         </div>
       </footer>
     </>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

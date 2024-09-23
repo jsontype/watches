@@ -1,29 +1,29 @@
-import { useState } from "react";
+import { useState } from 'react'
 
 const tabContents = [
   {
-    title: "Mission",
+    title: 'Mission',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
-    title: "Vision",
+    title: 'Vision',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. been the industry's stanLorem Ipsum has.",
   },
   {
-    title: "History",
+    title: 'History',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.",
   },
-];
+]
 
 const CompanyTab = () => {
-  const [activeTab, setActiveTab] = useState(0);
+  const [activeTab, setActiveTab] = useState(0)
 
-  const handleTabClick = (index) => {
-    setActiveTab(index);
-  };
+  const handleTabClick = index => {
+    setActiveTab(index)
+  }
 
   return (
     <div className="container">
@@ -33,7 +33,7 @@ const CompanyTab = () => {
           {tabContents?.map((tab, index) => (
             <li
               key={index}
-              className={activeTab === index ? "active-tab" : ""}
+              className={activeTab === index ? 'active-tab' : ''}
               onClick={() => handleTabClick(index)}
             >
               {tab.title}
@@ -51,7 +51,7 @@ const CompanyTab = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default CompanyTab;
+export default CompanyTab

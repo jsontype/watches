@@ -1,15 +1,15 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { CtaBtn } from "../Button/Button";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { CtaBtn } from '../Button/Button'
 
 const ctaData = {
-  title: "Get in touch with our experts",
+  title: 'Get in touch with our experts',
   description:
     " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.",
-};
+}
 
 const Cta = () => {
-  const { title, description } = ctaData;
+  const { title, description } = ctaData
 
   return (
     <div className="container">
@@ -26,7 +26,7 @@ const Cta = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Cta;
+export default Cta

@@ -1,28 +1,28 @@
-import React from "react";
-import SectionHeading from "../SectionHeading/SectionHeading";
+import React from 'react'
+import SectionHeading from '../SectionHeading/SectionHeading'
 
 const contactData = [
   {
-    label: "Mail",
-    icon: "/assets/img/icon/email.svg",
-    info: ["example@email.com", "crasauto@email.com"],
+    label: 'Mail',
+    icon: '/assets/img/icon/email.svg',
+    info: ['example@email.com', 'crasauto@email.com'],
   },
   {
-    label: "Location",
-    icon: "/assets/img/icon/location.svg",
-    info: ["901 N Pitt Str., Suite 170", "Alexandria, NY, USA"],
+    label: 'Location',
+    icon: '/assets/img/icon/location.svg',
+    info: ['901 N Pitt Str., Suite 170', 'Alexandria, NY, USA'],
   },
   {
-    label: "Phone",
-    icon: "/assets/img/icon/phone.svg",
-    info: ["(406) 555-0120"],
+    label: 'Phone',
+    icon: '/assets/img/icon/phone.svg',
+    info: ['(406) 555-0120'],
   },
   {
-    label: "Open Hour",
-    icon: "/assets/img/icon/date-icon.svg",
-    info: ["Sun - Thu: Open 24/7"],
+    label: 'Open Hour',
+    icon: '/assets/img/icon/date-icon.svg',
+    info: ['Sun - Thu: Open 24/7'],
   },
-];
+]
 
 const ContactInfo = () => {
   return (
@@ -32,10 +32,10 @@ const ContactInfo = () => {
         <div className="left-info" data-aos="fade-right">
           <div className="content">
             <SectionHeading
-              bgText={"Contact"}
-              title={"Contact"}
+              bgText={'Contact'}
+              title={'Contact'}
               desp={
-                " There are many variations of passages of Lorem Ipsum available,but the majority have suffered alteration in some form."
+                ' There are many variations of passages of Lorem Ipsum available,but the majority have suffered alteration in some form.'
               }
             />
           </div>
@@ -60,7 +60,7 @@ const ContactInfo = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ContactInfo;
+export default ContactInfo

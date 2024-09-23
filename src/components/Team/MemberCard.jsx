@@ -1,15 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 const MemberCard = ({ member, delay }) => {
   return (
     <div className="col">
       <div className="member-card" data-aos="fade-up" data-aos-delay={delay}>
         <Link to={`/team-member/${member.id}`}>
-          <img
-            src={member.image}
-            className="member-img ak-bg"
-            alt={member.name}
-          />
+          <img src={member.image} className="member-img ak-bg" alt={member.name} />
         </Link>
         <div className="member-info">
           <div className="member-title">
@@ -32,6 +28,6 @@ const MemberCard = ({ member, delay }) => {
         </div>
       </div>
     </div>
-  );
-};
-export default MemberCard;
+  )
+}
+export default MemberCard

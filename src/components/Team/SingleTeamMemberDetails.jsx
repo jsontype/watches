@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 const SingleTeamMemberDetails = ({ team }) => {
   const {
@@ -8,7 +8,7 @@ const SingleTeamMemberDetails = ({ team }) => {
     desp,
     contact: { address, email, phone, website },
     socialLinks: { linkedin, facebook, twitter },
-  } = team;
+  } = team
 
   return (
     <div className="container">
@@ -58,7 +58,7 @@ const SingleTeamMemberDetails = ({ team }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default SingleTeamMemberDetails;
+export default SingleTeamMemberDetails

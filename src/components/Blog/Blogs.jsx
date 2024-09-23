@@ -1,27 +1,27 @@
-import React from "react";
-import BlogCard from "./BlogCard";
-import SectionHeading from "../SectionHeading/SectionHeading";
+import React from 'react'
+import BlogCard from './BlogCard'
+import SectionHeading from '../SectionHeading/SectionHeading'
 
 const blogPosts = [
   {
     id: 1,
-    title: "The Importance of Regular Car Maintenance",
-    date: "17.10.2023",
-    imageUrl: "/assets/img/blog/blog_3.jpg",
+    title: 'The Importance of Regular Car Maintenance',
+    date: '17.10.2023',
+    imageUrl: '/assets/img/blog/blog_3.jpg',
   },
   {
     id: 2,
-    title: "The Roadmap to Reliability: Essential Car Care Tips",
-    date: "05.11.2023",
-    imageUrl: "/assets/img/blog/blog_1.jpg",
+    title: 'The Roadmap to Reliability: Essential Car Care Tips',
+    date: '05.11.2023',
+    imageUrl: '/assets/img/blog/blog_1.jpg',
   },
   {
     id: 3,
     title: "From Garage to Glory: Transform Your Vehicle's Health",
-    date: "12.11.2023",
-    imageUrl: "/assets/img/blog/blog_2.jpg",
+    date: '12.11.2023',
+    imageUrl: '/assets/img/blog/blog_2.jpg',
   },
-];
+]
 
 const Blogs = () => {
   return (
@@ -40,7 +40,7 @@ const Blogs = () => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Blogs;
+export default Blogs

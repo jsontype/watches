@@ -75,8 +75,7 @@
       transition: filter 0.3s ease;
     }
     &:hover > img {
-      filter: invert(56%) sepia(74%) saturate(607%) hue-rotate(334deg)
-        brightness(95%) contrast(94%);
+      filter: invert(56%) sepia(74%) saturate(607%) hue-rotate(334deg) brightness(95%) contrast(94%);
     }
   }
 

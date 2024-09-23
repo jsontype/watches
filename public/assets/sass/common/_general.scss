@@ -352,7 +352,7 @@
 .ak-video-block-1-wrap {
   position: relative;
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     height: 50%;
     width: 100%;
@@ -387,7 +387,7 @@
 
 .ak-heartbeat-btn:before,
 .ak-heartbeat-btn:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 50%;
   top: 50%;
@@ -678,7 +678,9 @@
       backface-visibility: hidden;
       transition: -webkit-transform 0.4s ease;
       transition: transform 0.4s ease;
-      transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+      transition:
+        transform 0.4s ease,
+        -webkit-transform 0.4s ease;
       transform: translateY(var(--m)) translateZ(0);
     }
   }
@@ -744,7 +746,11 @@
 
 .btn-animation {
   transform-style: preserve-3d;
-  transition: font-size 0.5s, background-color 0.3s, transform 0.3s, color 0.3s;
+  transition:
+    font-size 0.5s,
+    background-color 0.3s,
+    transform 0.3s,
+    color 0.3s;
   transform: translate3d(0, 0px, 0px);
   &:hover {
     font-size: 17px !important;
@@ -803,8 +809,7 @@
     transition: filter 0.3s ease-in-out;
   }
   :hover img {
-    filter: invert(56%) sepia(74%) saturate(607%) hue-rotate(334deg)
-      brightness(95%) contrast(94%);
+    filter: invert(56%) sepia(74%) saturate(607%) hue-rotate(334deg) brightness(95%) contrast(94%);
   }
 }
 /* end ak-animison cricle */
@@ -902,7 +907,7 @@
 }
 
 .nav-pages-item::after {
-  content: "+";
+  content: '+';
   margin-left: 5px;
   color: $primary;
   font-size: 20px;

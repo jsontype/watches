@@ -1,16 +1,13 @@
-import React from "react";
-import { MoreBtn } from "../Button/Button";
-import { Link } from "react-router-dom";
+import React from 'react'
+import { MoreBtn } from '../Button/Button'
+import { Link } from 'react-router-dom'
 
 const BlogCard = ({ post }) => {
   return (
     <div className="col">
       <div className="h-100">
         <div className="blog-card" data-aos="fade-up" data-aos-delay="100">
-          <Link
-            to={`/blog-single/${post.id}`}
-            aria-label={`Read more about ${post.title}`}
-          >
+          <Link to={`/blog-single/${post.id}`} aria-label={`Read more about ${post.title}`}>
             <div className="blog-header-info">
               <img src={`${post.imageUrl}`} alt={post.title} />
             </div>
@@ -29,7 +26,7 @@ const BlogCard = ({ post }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default BlogCard;
+export default BlogCard

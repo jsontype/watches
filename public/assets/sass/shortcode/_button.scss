@@ -9,10 +9,16 @@
   border: none;
   text-transform: uppercase;
   transform-style: preserve-3d;
-  transition: background-color 0.4s, transform 0.3s, color 0.3s;
+  transition:
+    background-color 0.4s,
+    transform 0.3s,
+    color 0.3s;
   transform: translate3d(0, 0px, 0px);
   &:hover {
-    transition: background-color 0.4s, transform 0.3s, color 0.3s;
+    transition:
+      background-color 0.4s,
+      transform 0.3s,
+      color 0.3s;
     background-color: rgba($white, 100%);
     color: var(--black-color);
     transform: translate3d(0px, -7px, 0.01px);
@@ -28,7 +34,7 @@
   text-transform: uppercase;
   margin-bottom: 6px;
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     display: inline;
     width: 70%;

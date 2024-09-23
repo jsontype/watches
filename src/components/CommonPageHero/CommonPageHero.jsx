@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 const CommonPageHero = ({ title }) => {
   return (
@@ -13,7 +13,7 @@ const CommonPageHero = ({ title }) => {
       </div>
       <div className="primary-color-border"></div>
     </div>
-  );
-};
+  )
+}
 
-export default CommonPageHero;
+export default CommonPageHero

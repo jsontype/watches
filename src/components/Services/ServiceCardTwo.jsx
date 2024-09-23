@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { MoreBtn } from "../Button/Button";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { MoreBtn } from '../Button/Button'
 
 export const ServiceCardTwo = ({ service }) => {
   return (
@@ -20,5 +20,5 @@ export const ServiceCardTwo = ({ service }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

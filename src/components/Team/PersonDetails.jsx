@@ -1,17 +1,17 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
+import { Link } from 'react-router-dom'
 const personData = {
   id: 1,
-  name: "Michael Jack",
-  title: "Founder of Company",
+  name: 'Michael Jack',
+  title: 'Founder of Company',
   quote:
-    "“There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected humour, or randomised”",
-  image: "/assets/img/team/ceo.jpg",
-  videoLink: "https://www.youtube.com/watch?v=VcaAVWtP48A",
-};
+    '“There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected humour, or randomised”',
+  image: '/assets/img/team/ceo.jpg',
+  videoLink: 'https://www.youtube.com/watch?v=VcaAVWtP48A',
+}
 
 const PersonDetails = () => {
-  const { name, title, quote, image, id } = personData;
+  const { name, title, quote, image, id } = personData
 
   return (
     <div className="container">
@@ -72,10 +72,10 @@ const PersonDetails = () => {
         </div>
       </div>
       <div className="ak-height-75 ak-height-lg-75"></div>
-      <div className="primary-color-border"></div>{" "}
+      <div className="primary-color-border"></div>{' '}
       <div className="ak-height-75 ak-height-lg-75"></div>
     </div>
-  );
-};
+  )
+}
 
-export default PersonDetails;
+export default PersonDetails

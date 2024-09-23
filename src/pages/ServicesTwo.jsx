@@ -1,17 +1,17 @@
-import React from "react";
+import React from 'react'
 
-import CommonPageHero from "../components/CommonPageHero/CommonPageHero";
-import Cta from "../components/Cta/Cta";
-import ServicesSectionTwo from "../components/Services/ServicesSectionTwo";
+import CommonPageHero from '../components/CommonPageHero/CommonPageHero'
+import Cta from '../components/Cta/Cta'
+import ServicesSectionTwo from '../components/Services/ServicesSectionTwo'
 
 const ServicesTwo = () => {
   return (
     <>
-      <CommonPageHero title={"Services"} />
+      <CommonPageHero title={'Services'} />
       <ServicesSectionTwo />
       <Cta />
     </>
-  );
-};
+  )
+}
 
-export default ServicesTwo;
+export default ServicesTwo

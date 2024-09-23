@@ -1,92 +1,86 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    topic: "",
-    subject: "",
-    msg: "",
-  });
+    name: '',
+    email: '',
+    topic: '',
+    subject: '',
+    msg: '',
+  })
 
-  const [alertMessage, setAlertMessage] = useState("");
-  const [errors, setErrors] = useState({});
+  const [alertMessage, setAlertMessage] = useState('')
+  const [errors, setErrors] = useState({})
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
+  const handleChange = e => {
+    const { name, value } = e.target
     setFormData({
       ...formData,
       [name]: value,
-    });
-  };
+    })
+  }
 
   const validate = () => {
-    let tempErrors = {};
-    let isValid = true;
+    let tempErrors = {}
+    let isValid = true
 
     if (!formData.name) {
-      isValid = false;
-      tempErrors["name"] = "Please enter your full name.";
+      isValid = false
+      tempErrors['name'] = 'Please enter your full name.'
     }
 
     if (!formData.email) {
-      isValid = false;
-      tempErrors["email"] = "Please enter your email address.";
-    } else if (typeof formData.email !== "undefined") {
-      let pattern = new RegExp(/^[^\s@]+@[^\s@]+\.[^\s@]+$/);
+      isValid = false
+      tempErrors['email'] = 'Please enter your email address.'
+    } else if (typeof formData.email !== 'undefined') {
+      let pattern = new RegExp(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)
       if (!pattern.test(formData.email)) {
-        isValid = false;
-        tempErrors["email"] = "Please enter a valid email address.";
+        isValid = false
+        tempErrors['email'] = 'Please enter a valid email address.'
       }
     }
 
     if (!formData.topic) {
-      isValid = false;
-      tempErrors["topic"] = "Please enter a topic.";
+      isValid = false
+      tempErrors['topic'] = 'Please enter a topic.'
     }
 
     if (!formData.subject) {
-      isValid = false;
-      tempErrors["subject"] = "Please enter a subject.";
+      isValid = false
+      tempErrors['subject'] = 'Please enter a subject.'
     }
 
     if (!formData.msg) {
-      isValid = false;
-      tempErrors["msg"] = "Please enter your message.";
+      isValid = false
+      tempErrors['msg'] = 'Please enter your message.'
     }
 
-    setErrors(tempErrors);
-    return isValid;
-  };
+    setErrors(tempErrors)
+    return isValid
+  }
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = e => {
+    e.preventDefault()
     if (validate()) {
-      alert("Your message has been sent successfully!");
+      alert('Your message has been sent successfully!')
 
       setFormData({
-        name: "",
-        email: "",
-        topic: "",
-        subject: "",
-        msg: "",
-      });
+        name: '',
+        email: '',
+        topic: '',
+        subject: '',
+        msg: '',
+      })
     }
-  };
+  }
 
   return (
     <div className="container">
       <div className="ak-height-100 ak-height-lg-40"></div>
       <div className="ak-height-125 ak-height-lg-80"></div>
       <div className="contact-content">
-        <div
-          className="contact-title-section"
-          data-aos="fade-up"
-          data-aos-delay="700"
-        >
-          <h2 className="contact-form-title ak-white-color text-uppercase">
-            Contact Us
-          </h2>
+        <div className="contact-title-section" data-aos="fade-up" data-aos-delay="700">
+          <h2 className="contact-form-title ak-white-color text-uppercase">Contact Us</h2>
           <p>Home / Contact</p>
         </div>
         <div className="ak-height-25 ak-height-lg-20"></div>
@@ -94,9 +88,8 @@ const ContactForm = () => {
           <div>
             <h5 className="mb-3">How can we help?</h5>
             <p>
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration in some form, by
-              injected humour
+              There are many variations of passages of Lorem Ipsum available, but the majority have
+              suffered alteration in some form, by injected humour
             </p>
             <div className="ak-height-45 ak-height-lg-30"></div>
           </div>
@@ -180,19 +173,14 @@ const ContactForm = () => {
             </div>
 
             <div className="ak-height-40 ak-height-lg-20"></div>
-            <button
-              type="submit"
-              id="submit"
-              name="submit"
-              className="common-btn"
-            >
+            <button type="submit" id="submit" name="submit" className="common-btn">
               SEND MESSAGE
             </button>
           </form>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ContactForm;
+export default ContactForm
