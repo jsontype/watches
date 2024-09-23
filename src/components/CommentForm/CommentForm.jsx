@@ -1,24 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react'
 
 const CommentForm = ({ blogid }) => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [comment, setComment] = useState("");
-  const [comments, setComments] = useState([]);
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [comment, setComment] = useState('')
+  const [comments, setComments] = useState([])
 
   useEffect(() => {
-    setComments([]);
-  }, [blogid]);
+    setComments([])
+  }, [blogid])
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const newComment = { name, email, comment };
-    setComments([...comments, newComment]);
-    setName("");
-    setEmail("");
-    setComment("");
-    alert("Data sent successfully");
-  };
+  const handleSubmit = e => {
+    e.preventDefault()
+    const newComment = { name, email, comment }
+    setComments([...comments, newComment])
+    setName('')
+    setEmail('')
+    setComment('')
+    alert('Data sent successfully')
+  }
 
   return (
     <>
@@ -39,9 +39,7 @@ const CommentForm = ({ blogid }) => {
       <div className="ak-height-30 ak-height-lg-30"></div>
       <div className="post-from" data-aos="fade-up">
         <div className="comment-form-title-container">
-          <h2 className="contact-form-title ak-white-color text-uppercase">
-            Post A Comment
-          </h2>
+          <h2 className="contact-form-title ak-white-color text-uppercase">Post A Comment</h2>
         </div>
         <div className="ak-height-25 ak-height-lg-20"></div>
         <div className="contact-form">
@@ -51,14 +49,14 @@ const CommentForm = ({ blogid }) => {
                 placeholder="Name"
                 type="text"
                 value={name}
-                onChange={(e) => setName(e.target.value)}
+                onChange={e => setName(e.target.value)}
                 required
               />
               <input
                 placeholder="Email"
                 type="email"
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={e => setEmail(e.target.value)}
                 required
               />
             </div>
@@ -66,7 +64,7 @@ const CommentForm = ({ blogid }) => {
               <textarea
                 name="comment"
                 value={comment}
-                onChange={(e) => setComment(e.target.value)}
+                onChange={e => setComment(e.target.value)}
                 required
                 rows="5"
                 placeholder="Comment"
@@ -80,7 +78,7 @@ const CommentForm = ({ blogid }) => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default CommentForm;
+export default CommentForm

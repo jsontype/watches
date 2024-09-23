@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import ModalVideo from "react-modal-video";
+import React, { useState } from 'react'
+import ModalVideo from 'react-modal-video'
 
-import aboutVideoBg from "/assets/img/bg/car_video_bg.jpg";
+import aboutVideoBg from '/assets/img/bg/car_video_bg.jpg'
 
 const Videos = ({ videoId }) => {
-  const [isOpen, setOpen] = useState(false);
+  const [isOpen, setOpen] = useState(false)
   return (
     <>
       <div className="ak-height-150 ak-height-lg-60"></div>
@@ -31,7 +31,7 @@ const Videos = ({ videoId }) => {
         </button>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Videos;
+export default Videos

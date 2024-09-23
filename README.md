@@ -1,5 +1,6 @@
 # React + Vite
 
 # Start
-  npm i
-  npm run dev
+
+npm i
+npm run dev

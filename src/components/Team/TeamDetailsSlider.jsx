@@ -1,44 +1,39 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Navigation,
-  EffectCoverflow,
-  Autoplay,
-  Keyboard,
-} from "swiper/modules";
+import React from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, EffectCoverflow, Autoplay, Keyboard } from 'swiper/modules'
 
 const slidesData = [
   {
     id: 1,
-    image: "/assets/img/team/team_single_page_slider_1.jpg",
-    alt: "Slide 1",
+    image: '/assets/img/team/team_single_page_slider_1.jpg',
+    alt: 'Slide 1',
   },
   {
     id: 2,
-    image: "/assets/img/team/team_single_page_slider_2.jpg",
-    alt: "Slide 2",
+    image: '/assets/img/team/team_single_page_slider_2.jpg',
+    alt: 'Slide 2',
   },
   {
     id: 3,
-    image: "/assets/img/team/team_single_page_slider_3.jpg",
-    alt: "Slide 3",
+    image: '/assets/img/team/team_single_page_slider_3.jpg',
+    alt: 'Slide 3',
   },
   {
     id: 4,
-    image: "/assets/img/team/team_single_page_slider_1.jpg",
-    alt: "Slide 4",
+    image: '/assets/img/team/team_single_page_slider_1.jpg',
+    alt: 'Slide 4',
   },
   {
     id: 5,
-    image: "/assets/img/team/team_single_page_slider_2.jpg",
-    alt: "Slide 5",
+    image: '/assets/img/team/team_single_page_slider_2.jpg',
+    alt: 'Slide 5',
   },
   {
     id: 6,
-    image: "/assets/img/team/team_single_page_slider_3.jpg",
-    alt: "Slide 6",
+    image: '/assets/img/team/team_single_page_slider_3.jpg',
+    alt: 'Slide 6',
   },
-];
+]
 
 const TeamDetailsSlider = () => {
   return (
@@ -52,7 +47,7 @@ const TeamDetailsSlider = () => {
           autoplay={true}
           slidesPerView="auto"
           effect="coverflow"
-          spaceBetween={"12%"}
+          spaceBetween={'12%'}
           grabCursor={true}
           centeredSlides={true}
           coverflowEffect={{
@@ -64,11 +59,11 @@ const TeamDetailsSlider = () => {
           keyboard={{ enabled: true }}
           className="mySwiper"
           navigation={{
-            nextEl: ".button-next",
-            prevEl: ".button-prev",
+            nextEl: '.button-next',
+            prevEl: '.button-prev',
           }}
         >
-          {slidesData.map((slide) => (
+          {slidesData.map(slide => (
             <SwiperSlide key={slide.id}>
               <img className="slide-img" src={slide.image} alt={slide.alt} />
             </SwiperSlide>
@@ -84,7 +79,7 @@ const TeamDetailsSlider = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default TeamDetailsSlider;
+export default TeamDetailsSlider

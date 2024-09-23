@@ -1,86 +1,82 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 
 const AppointmentForm = () => {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    vehicle: "",
-    time: "",
-    date: "",
-    msg: "",
-  });
+    name: '',
+    email: '',
+    phone: '',
+    vehicle: '',
+    time: '',
+    date: '',
+    msg: '',
+  })
 
-  const [formErrors, setFormErrors] = useState({});
+  const [formErrors, setFormErrors] = useState({})
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-    setFormErrors({ ...formErrors, [name]: "" });
-  };
+  const handleInputChange = e => {
+    const { name, value } = e.target
+    setFormData({ ...formData, [name]: value })
+    setFormErrors({ ...formErrors, [name]: '' })
+  }
 
   const validateForm = () => {
-    const errors = {};
+    const errors = {}
     if (!formData.name.trim()) {
-      errors.name = "Name is required";
+      errors.name = 'Name is required'
     }
     if (!formData.email.trim()) {
-      errors.email = "Email is required";
+      errors.email = 'Email is required'
     } else if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
-      errors.email = "Email is invalid";
+      errors.email = 'Email is invalid'
     }
     if (!formData.phone.trim()) {
-      errors.phone = "Phone number is required";
+      errors.phone = 'Phone number is required'
     }
     if (!formData.vehicle.trim()) {
-      errors.vehicle = "Vehicle type is required";
+      errors.vehicle = 'Vehicle type is required'
     }
     if (!formData.time.trim()) {
-      errors.time = "Time is required";
+      errors.time = 'Time is required'
     }
     if (!formData.date.trim()) {
-      errors.date = "Date is required";
+      errors.date = 'Date is required'
     }
     if (!formData.msg.trim()) {
-      errors.msg = "Message is required";
+      errors.msg = 'Message is required'
     }
-    setFormErrors(errors);
-    return Object.keys(errors).length === 0;
-  };
+    setFormErrors(errors)
+    return Object.keys(errors).length === 0
+  }
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const isValid = validateForm();
+  const handleSubmit = e => {
+    e.preventDefault()
+    const isValid = validateForm()
     if (isValid) {
-      alert("Data send successfully");
+      alert('Data send successfully')
 
       setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        vehicle: "",
-        time: "",
-        date: "",
-        msg: "",
-      });
+        name: '',
+        email: '',
+        phone: '',
+        vehicle: '',
+        time: '',
+        date: '',
+        msg: '',
+      })
     }
-  };
+  }
 
   return (
     <div className="container">
       <div className="ak-height-125 ak-height-lg-80"></div>
       <div className="contact-content">
-        <div
-          className="contact-title-section"
-          data-aos="fade-up"
-          data-aos-delay="700"
-        >
+        <div className="contact-title-section" data-aos="fade-up" data-aos-delay="700">
           <h2 className="contact-form-title ak-white-color text-uppercase">
             Request for an appointment
           </h2>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's stan.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+            has been the industry's stan.
           </p>
         </div>
         <div className="ak-height-25 ak-height-lg-20"></div>
@@ -101,9 +97,7 @@ const AppointmentForm = () => {
                   required
                 />
                 {formErrors.name && (
-                  <span className="error-message text-danger">
-                    {formErrors.name}
-                  </span>
+                  <span className="error-message text-danger">{formErrors.name}</span>
                 )}
               </div>
               <div className="type_1">
@@ -119,9 +113,7 @@ const AppointmentForm = () => {
                   required
                 />
                 {formErrors.email && (
-                  <span className="error-message text-danger">
-                    {formErrors.email}
-                  </span>
+                  <span className="error-message text-danger">{formErrors.email}</span>
                 )}
               </div>
             </div>
@@ -139,9 +131,7 @@ const AppointmentForm = () => {
                   required
                 />
                 {formErrors.phone && (
-                  <span className="error-message text-danger">
-                    {formErrors.phone}
-                  </span>
+                  <span className="error-message text-danger">{formErrors.phone}</span>
                 )}
               </div>
               <div className="type_1">
@@ -157,9 +147,7 @@ const AppointmentForm = () => {
                   required
                 />
                 {formErrors.vehicle && (
-                  <span className="error-message text-danger">
-                    {formErrors.vehicle}
-                  </span>
+                  <span className="error-message text-danger">{formErrors.vehicle}</span>
                 )}
               </div>
             </div>
@@ -176,9 +164,7 @@ const AppointmentForm = () => {
                   required
                 />
                 {formErrors.time && (
-                  <span className="error-message text-danger">
-                    {formErrors.time}
-                  </span>
+                  <span className="error-message text-danger">{formErrors.time}</span>
                 )}
                 <span className="date-time-icon">
                   <img src="/assets/img/icon/time-icon.svg" alt="Time" />
@@ -196,9 +182,7 @@ const AppointmentForm = () => {
                   required
                 />
                 {formErrors.date && (
-                  <span className="error-message text-danger">
-                    {formErrors.date}
-                  </span>
+                  <span className="error-message text-danger">{formErrors.date}</span>
                 )}
                 <span className="date-time-icon">
                   <img src="/assets/img/icon/date-icon.svg" alt="Date" />
@@ -218,26 +202,19 @@ const AppointmentForm = () => {
                   required
                 ></textarea>
                 {formErrors.msg && (
-                  <span className="error-message text-danger">
-                    {formErrors.msg}
-                  </span>
+                  <span className="error-message text-danger">{formErrors.msg}</span>
                 )}
               </div>
             </div>
             <div className="ak-height-40 ak-height-lg-20"></div>
-            <button
-              type="submit"
-              id="submit"
-              name="submit"
-              className="common-btn"
-            >
+            <button type="submit" id="submit" name="submit" className="common-btn">
               Appointment Now
             </button>
           </form>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default AppointmentForm;
+export default AppointmentForm

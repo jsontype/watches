@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-import commpagesbg from "/assets/img/bg/commpagesbg.jpg";
+import commpagesbg from '/assets/img/bg/commpagesbg.jpg'
 
 const AboutPageHero = ({ title }) => {
   return (
@@ -20,7 +20,7 @@ const AboutPageHero = ({ title }) => {
       </div>
       <div className="ak-height-100 ak-height-lg-100"></div>
     </div>
-  );
-};
+  )
+}
 
-export default AboutPageHero;
+export default AboutPageHero

@@ -1,14 +1,10 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 const TeamCard = ({ member, delay }) => {
   return (
     <div className="col">
-      <div
-        className="team-card ak-bg"
-        data-aos="fade-up"
-        data-aos-delay={delay}
-      >
+      <div className="team-card ak-bg" data-aos="fade-up" data-aos-delay={delay}>
         <img src={member.image} className="team-img" alt={member.name} />
         <div className="team-style-1">
           <div className="team-info">
@@ -31,7 +27,7 @@ const TeamCard = ({ member, delay }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default TeamCard;
+export default TeamCard

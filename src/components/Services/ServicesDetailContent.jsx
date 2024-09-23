@@ -1,12 +1,12 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { MoreBtn } from "../Button/Button";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { MoreBtn } from '../Button/Button'
 
 const ServicesDetailContent = ({ service }) => {
   const {
     service_details: { title, description, services },
     similar_services,
-  } = service;
+  } = service
 
   return (
     <>
@@ -42,17 +42,11 @@ const ServicesDetailContent = ({ service }) => {
                     <img src={similar_item.icon} alt={similar_item.title} />
                   </div>
                   <div className="service-desp">
-                    <Link
-                      to={`/service-single/${similar_item.id}`}
-                      className="title"
-                    >
+                    <Link to={`/service-single/${similar_item.id}`} className="title">
                       {similar_item.title}
                     </Link>
                     <p className="desp">{similar_item.description}</p>
-                    <MoreBtn
-                      to={`/service-single/${similar_item.id}`}
-                      className="more-btn"
-                    >
+                    <MoreBtn to={`/service-single/${similar_item.id}`} className="more-btn">
                       VIEW MORE
                     </MoreBtn>
                   </div>
@@ -63,7 +57,7 @@ const ServicesDetailContent = ({ service }) => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default ServicesDetailContent;
+export default ServicesDetailContent

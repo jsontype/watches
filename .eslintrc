@@ -1,0 +1,44 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }, 
+  // off 0, warn 1, error 2
+  "rules": {
+    "react/react-in-jsx-scope": 0, // import react from 'react' 필요 여부 옵션
+    "react/jsx-uses-vars": 1, // 사용하지 않는 변수, 함수가 있으면 경고 처리
+    "no-unused-vars": 1, // 사용하지 않는 변수, 함수가 있으면 경고 처리
+    "no-undef": 0, // 선언하지 않은 변수, 함수가 있으면 경고 처리
+    "no-sparse-arrays": 0, // 배열에서 빈 요소 사용 금지
+    "no-extra-semi": 0, // 불필요한 세미콜론 사용 금지
+    "no-useless-escape": 0, // 불필요한 이스케이프 사용 금지
+    "no-prototype-builtins": 0, // 객체 프로토타입 메서드 사용 금지
+    "no-cond-assign": 0, // 조건식에서 대입 연산자 사용 금지
+    "no-empty": 0, // 빈 블록문 사용 금지
+    "getter-return": 0, // getter 함수에서 반드시 return 사용
+    "no-misleading-character-class": 0, // 문자 클래스 내에서 혼동을 줄 수 있는 문자 사용 금지
+    "no-control-regex": 0, // 제어문자를 정규표현식에 사용 금지
+    "no-self-assign": 0, // 자기 자신에 대한 할당 사용 금지
+    "no-console": 1 // console 사용 금지
+  }
+}
