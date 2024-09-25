@@ -3,24 +3,24 @@ import SectionHeading from "../SectionHeading/SectionHeading";
 
 const contactData = [
   {
-    label: "Mail",
+    label: "メール",
     icon: "/assets/img/icon/email.svg",
-    info: ["example@email.com", "crasauto@email.com"],
+    info: ["jsontyper@gmail.com", "yung_watches@email.com"],
   },
   {
-    label: "Location",
+    label: "所在地",
     icon: "/assets/img/icon/location.svg",
-    info: ["901 N Pitt Str., Suite 170", "Alexandria, NY, USA"],
+    info: ["東京都足立区千住寿町"],
   },
   {
-    label: "Phone",
+    label: "電話番号",
     icon: "/assets/img/icon/phone.svg",
-    info: ["(406) 555-0120"],
+    info: ["+81-70-1543-3733"],
   },
   {
-    label: "Open Hour",
+    label: "営業日時",
     icon: "/assets/img/icon/date-icon.svg",
-    info: ["Sun - Thu: Open 24/7"],
+    info: ["土日・祝日 / 10:00-18:00"],
   },
 ];
 
@@ -32,10 +32,10 @@ const ContactInfo = () => {
         <div className="left-info" data-aos="fade-right">
           <div className="content">
             <SectionHeading
-              bgText={"Contact"}
-              title={"Contact"}
+              bgText={"お問い合わせ"}
+              title={"お問い合わせ"}
               desp={
-                " There are many variations of passages of Lorem Ipsum available,but the majority have suffered alteration in some form."
+                " お困りの事がありましたら、一度お気軽にお問い合わせくださいませ。"
               }
             />
           </div>

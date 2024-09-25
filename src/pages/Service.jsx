@@ -7,7 +7,7 @@ import CommonPageHero from "../components/CommonPageHero/CommonPageHero";
 const Service = () => {
   return (
     <>
-      <CommonPageHero title={"Services"} />
+      <CommonPageHero title={"サービス1"} />
       <Services />
       <Cta />
     </>

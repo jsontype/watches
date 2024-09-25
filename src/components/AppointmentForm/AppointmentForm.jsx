@@ -22,27 +22,27 @@ const AppointmentForm = () => {
   const validateForm = () => {
     const errors = {};
     if (!formData.name.trim()) {
-      errors.name = "Name is required";
+      errors.name = "お名前は必須です";
     }
     if (!formData.email.trim()) {
-      errors.email = "Email is required";
+      errors.email = "メールアドレスは必須です";
     } else if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
-      errors.email = "Email is invalid";
+      errors.email = "メールアドレスが無効です";
     }
     if (!formData.phone.trim()) {
-      errors.phone = "Phone number is required";
+      errors.phone = "電話番号は必須です";
     }
     if (!formData.vehicle.trim()) {
-      errors.vehicle = "Vehicle type is required";
+      errors.vehicle = "時計の種類は必須です";
     }
     if (!formData.time.trim()) {
-      errors.time = "Time is required";
+      errors.time = "時間の選択は必須です";
     }
     if (!formData.date.trim()) {
-      errors.date = "Date is required";
+      errors.date = "日付の選択は必須です";
     }
     if (!formData.msg.trim()) {
-      errors.msg = "Message is required";
+      errors.msg = "メッセージは必須です";
     }
     setFormErrors(errors);
     return Object.keys(errors).length === 0;
@@ -52,7 +52,7 @@ const AppointmentForm = () => {
     e.preventDefault();
     const isValid = validateForm();
     if (isValid) {
-      alert("Data send successfully");
+      alert("データが正常に送信されました");
 
       setFormData({
         name: "",
@@ -76,11 +76,10 @@ const AppointmentForm = () => {
           data-aos-delay="700"
         >
           <h2 className="contact-form-title ak-white-color text-uppercase">
-            Request for an appointment
+            ご予約のリクエスト
           </h2>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's stan.
+            時計専門店でのご予約に関して、こちらからお申し込みいただけます。お客様のご要望に合わせたサービスを提供いたします。
           </p>
         </div>
         <div className="ak-height-25 ak-height-lg-20"></div>
@@ -90,14 +89,14 @@ const AppointmentForm = () => {
             <div className="from-inputs">
               <div className="type_1">
                 <label htmlFor="name" className="form-label">
-                  Full Name
+                  お名前
                 </label>
                 <input
                   type="text"
                   name="name"
                   value={formData.name}
                   onChange={handleInputChange}
-                  placeholder="Full Name"
+                  placeholder="お名前"
                   required
                 />
                 {formErrors.name && (
@@ -108,14 +107,14 @@ const AppointmentForm = () => {
               </div>
               <div className="type_1">
                 <label htmlFor="email" className="form-label">
-                  Email*
+                  メールアドレス*
                 </label>
                 <input
                   type="email"
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  placeholder="Email"
+                  placeholder="メールアドレス"
                   required
                 />
                 {formErrors.email && (
@@ -128,14 +127,14 @@ const AppointmentForm = () => {
             <div className="from-inputs">
               <div className="type_1">
                 <label htmlFor="phone" className="form-label">
-                  Phone Number*
+                  電話番号*
                 </label>
                 <input
                   type="text"
                   name="phone"
                   value={formData.phone}
                   onChange={handleInputChange}
-                  placeholder="Phone Number"
+                  placeholder="電話番号"
                   required
                 />
                 {formErrors.phone && (
@@ -146,14 +145,14 @@ const AppointmentForm = () => {
               </div>
               <div className="type_1">
                 <label htmlFor="vehicle" className="form-label">
-                  Vehicle Type*
+                  時計の種類*
                 </label>
                 <input
                   type="text"
                   name="vehicle"
                   value={formData.vehicle}
                   onChange={handleInputChange}
-                  placeholder="Vehicle Type"
+                  placeholder="時計の種類"
                   required
                 />
                 {formErrors.vehicle && (
@@ -166,7 +165,7 @@ const AppointmentForm = () => {
             <div className="from-inputs">
               <div className="type_1">
                 <label htmlFor="time" className="form-label">
-                  Select Time*
+                  ご希望の時間*
                 </label>
                 <input
                   type="time"
@@ -186,7 +185,7 @@ const AppointmentForm = () => {
               </div>
               <div className="type_1">
                 <label htmlFor="date" className="form-label">
-                  Select Date*
+                  ご希望の日付*
                 </label>
                 <input
                   type="date"
@@ -208,7 +207,7 @@ const AppointmentForm = () => {
             <div className="from-textarea">
               <div className="type_1">
                 <label htmlFor="msg" className="form-label">
-                  Your Message*
+                  メッセージ*
                 </label>
                 <textarea
                   name="msg"
@@ -231,7 +230,7 @@ const AppointmentForm = () => {
               name="submit"
               className="common-btn"
             >
-              Appointment Now
+              今すぐ予約
             </button>
           </form>
         </div>

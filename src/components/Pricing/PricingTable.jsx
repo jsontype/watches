@@ -4,40 +4,37 @@ import SectionHeading from "../SectionHeading/SectionHeading";
 
 const pricingData = [
   {
-    title: "Total Car Care",
-    discountPrice: "$299.99",
-    mainPrice: "$399.99",
+    title: "オーバーホール",
+    discountPrice: "¥30,000",
+    mainPrice: "¥30,000",
     options: [
-      "Performance Tuning",
-      "Exhaust System Installation",
-      "Performance Brake Upgrade",
-      "Interior Exterior Detailing",
+      "基本的なオーバーホール",
+      "高精度な部品交換",
+      "全面的なメンテナンス",
     ],
     isActive: false,
     aosDelay: 0,
   },
   {
-    title: "Performance Enhancement",
-    discountPrice: "$599.99",
-    mainPrice: "$899.99",
+    title: "コーディネーターサービス",
+    discountPrice: "¥100,000",
+    mainPrice: "¥30,000",
     options: [
-      "Performance Tuning",
-      "Exhaust System Installation",
-      "Performance Brake Upgrade",
-      "Interior Exterior Detailing",
+      "デザイン提案",
+      "素材選定サポート",
+      "カスタム時計製作",
     ],
     isActive: true,
     aosDelay: 50,
   },
   {
-    title: "Fleet Maintenance",
-    discountPrice: "$399.99",
-    mainPrice: "$499.99",
+    title: "自社時計開発",
+    discountPrice: "¥1,000,000",
+    mainPrice: "¥100,000",
     options: [
-      "Performance Tuning",
-      "Exhaust System Installation",
-      "Performance Brake Upgrade",
-      "Interior Exterior Detailing",
+      "コンセプトデザイン",
+      "プロトタイプ製作",
+      "生産ライン管理",
     ],
     isActive: false,
     aosDelay: 100,
@@ -59,9 +56,9 @@ const PricingTable = ({ type }) => {
             <>
               <SectionHeading
                 type={true}
-                bgText="Pricing"
-                title="Pricing"
-                desp="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+                bgText="料金プラン"
+                title="料金プラン"
+                desp="当店では、厳選された時計メンテナンスサービスをご提供しています。お客様のニーズに合わせた料金プランをぜひご覧ください。"
               />
               <div className="ak-height-50 ak-height-lg-50"></div>
             </>

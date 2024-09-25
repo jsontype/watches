@@ -17,20 +17,20 @@ const CommentForm = ({ blogid }) => {
     setName("");
     setEmail("");
     setComment("");
-    alert("Data sent successfully");
+    alert("コメントの送信が完了しました");
   };
 
   return (
     <>
       <div className="single-blog-list" data-aos="fade-up">
-        <h4 className="single-blog-title">Comment count ({comments.length})</h4>
+        <h4 className="single-blog-title">コメント数 ({comments.length})</h4>
         {comments.length === 0 ? (
-          <p className="single-blog-desp">No comments yet!</p>
+          <p className="single-blog-desp">まだコメントをカウントしていません！</p>
         ) : (
           comments.map((comment, index) => (
             <div key={index}>
-              <p>Name: {comment.name}</p>
-              <p>Comment: {comment.comment}</p>
+              <p>お名前: {comment.name}</p>
+              <p>コメント: {comment.comment}</p>
               <hr />
             </div>
           ))
@@ -40,7 +40,7 @@ const CommentForm = ({ blogid }) => {
       <div className="post-from" data-aos="fade-up">
         <div className="comment-form-title-container">
           <h2 className="contact-form-title ak-white-color text-uppercase">
-            Post A Comment
+            コメントを投稿する
           </h2>
         </div>
         <div className="ak-height-25 ak-height-lg-20"></div>
@@ -48,14 +48,14 @@ const CommentForm = ({ blogid }) => {
           <form onSubmit={handleSubmit}>
             <div className="from-inputs">
               <input
-                placeholder="Name"
+                placeholder="お名前"
                 type="text"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 required
               />
               <input
-                placeholder="Email"
+                placeholder="メールアドレス"
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -69,12 +69,12 @@ const CommentForm = ({ blogid }) => {
                 onChange={(e) => setComment(e.target.value)}
                 required
                 rows="5"
-                placeholder="Comment"
+                placeholder="コメント"
               ></textarea>
             </div>
             <div className="ak-height-40 ak-height-lg-20"></div>
             <button type="submit" className="common-btn">
-              POST COMMENT
+              コメントを投稿
             </button>
           </form>
         </div>

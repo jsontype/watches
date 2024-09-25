@@ -13,12 +13,12 @@ const TeamMemberDetails = () => {
   const team = membersData.find((team) => team.id === parseInt(teamId));
 
   if (!team) {
-    return <p>Team not found</p>;
+    return <p>チームは探せませんでした</p>;
   }
 
   return (
     <>
-      <CommonPageHero title={"TEAM PAGE"} />
+      <CommonPageHero title={"チーム"} />
       <SingleTeamMemberDetails team={team} />
       <TeamDetailsSlider />
       <SpecialistTeamMembers styleTypeTwo={true} team={team} />

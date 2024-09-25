@@ -23,7 +23,7 @@ const Blog = () => {
 
   return (
     <>
-      <CommonPageHero title={"Blogs"} />
+      <CommonPageHero title={"ブログ"} />
       <BlogFeature />
       <div className="container">
         <div className="ak-height-50 ak-height-lg-50"></div>

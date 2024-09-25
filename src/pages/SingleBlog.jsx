@@ -17,21 +17,21 @@ const SingleBlog = () => {
     .slice(0, 3);
 
   if (!blog) {
-    return <p>Blog post not found</p>;
+    return <p>ブログ記事が見つかりませんでした</p>;
   }
 
   return (
     <>
-      <CommonPageHero title={"Single Blog"} />
+      <CommonPageHero title={"ブログ"} />
       <BlogPost post={blog} />
 
       <div className="container">
         <div className="ak-height-125 ak-height-lg-80"></div>
         <SectionHeading
           type={true}
-          bgText="SIMILARBLOG"
-          title="SIMILAR BLOG"
-          desp="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+          bgText="関連ブログ"
+          title="関連ブログ"
+          desp="あなたが興味がありそうな関連ブログはこちら"
         />
         <div className="ak-height-50 ak-height-lg-50"></div>
         <div className="row row-cols-1 row-cols-md-1 row-cols-lg-3 g-5 g-lg-4">

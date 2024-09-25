@@ -33,7 +33,7 @@ const ServicesSection = ({ styleTypeTwo }) => {
                     </Link>
                     <p className="card-desp">{item.desp}</p>
                     <MoreBtn to={`/service-single/${item.id}`}>
-                      VIEW MORE
+                      詳細
                     </MoreBtn>
                   </div>
                 </div>
@@ -43,14 +43,14 @@ const ServicesSection = ({ styleTypeTwo }) => {
           <div className="sidebar width-none">
             <div className="services-content">
               <SectionHeading
-                bgText={"Services"}
-                title={"Dedicated is Services"}
+                bgText={"サービス"}
+                title={"専任のサービス"}
                 desp={
-                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industr sstan. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum."
+                  "私たちのサービスは、お客様のニーズに応じた最高のソリューションを提供します。業界の専門家による質の高いサービスを通じて、お客様の期待を超える体験をお届けします。私たちのチームは最新の技術とトレンドを取り入れ、常に進化し続けることを目指しています。安心してお任せいただけるよう、丁寧なサポートを心掛けています。"
                 }
               />
               <div className="ak-height-50 ak-height-lg-10"></div>
-              <MoreBtn to="/service">VIEW All SERVICES</MoreBtn>
+              <MoreBtn to="/service">すべてのサービスを見る</MoreBtn>
             </div>
           </div>
         </div>

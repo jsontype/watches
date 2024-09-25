@@ -4,11 +4,11 @@ import Accordion from "../Accordion/Accordion";
 import accordionImg from "/assets/img/accordion-side-img.jpg";
 
 const contactDetails = {
-  title: " Frequently Asked Questions",
-  phone: "(406) 555-0120",
-  email: "example@email.com",
-  address: "901 N Pitt Str., Suite 170, Alexandria, NY, USA",
-  workingHours: "Sun - Thu: Open 24/7",
+  title: " よくある質問",
+  phone: "+81-70-1543-3733",
+  email: "jsontyper@gmail.com",
+  address: "東京都足立区千住寿町",
+  workingHours: "営業日時：土日・祝日 / 10:00-18:00",
 };
 
 const FrequentlyQuestions = () => {

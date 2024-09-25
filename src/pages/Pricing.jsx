@@ -7,7 +7,7 @@ import AppointmentForm from "../components/AppointmentForm/AppointmentForm";
 export default function Pricing() {
   return (
     <>
-      <CommonPageHero title={"Pricing Plan"} />
+      <CommonPageHero title={"料金プラン"} />
       <PricingTable type={true} />
       <AppointmentForm />
     </>

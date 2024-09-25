@@ -32,12 +32,12 @@ const PricingCard = ({
       </div>
       <Link to="#" className="get-started-btn">
         <span>
-          GET
+          利用
           <span>
             <img src="/assets/img/icon/started-btn.svg" alt="..." />
             <br />
           </span>
-          STARTED
+          開始
         </span>
       </Link>
     </div>

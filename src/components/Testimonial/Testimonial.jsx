@@ -8,16 +8,16 @@ import testimaonialBgImg from "/assets/img/bg/testimaonial-img-bg.png";
 const sliderData = [
   {
     id: 1,
-    name: "Roberts Bush",
-    from: "From Canada",
-    desp: "“There are many variations of passages of Lorem Ipsum available,butthe majority have suffered alteration in some form injected humour, or randomised”",
+    name: "キャサリン",
+    from: "カナダより",
+    desp: "“この時計は私の人生の重要な瞬間を共に過ごしてきました。精密な機械と美しいデザインが融合した逸品で、どんな場面でも自信を持たせてくれます。”",
     img: "/assets/img/testmaonail/testimaonial.png",
   },
   {
     id: 2,
-    name: "Butthe Bush",
-    from: "From Canada",
-    desp: "“There are many variations of passages of Lorem Ipsum available,butthe majority have suffered alteration in some form injected humour, or randomised”",
+    name: "クリス",
+    from: "イギリスより",
+    desp: "“このショップでの体験は本当に素晴らしかったです。スタッフは非常に親切で、私のニーズに合った時計を見つけてくれました。今では毎日身につけている大切なパートナーです。”",
     img: "/assets/img/testmaonail/testmaonail_1.png",
   },
 ];
@@ -30,8 +30,8 @@ const Testimonial = () => {
       <div className="ak-testimonal-controll">
         <div className="testimonal-heading" data-aos="fade-right">
           <SectionHeading
-            bgText="Testimonial"
-            title={"SEE WHAT OUR Satisfied"}
+            bgText="お客様の声"
+            title={"お客様の満足の声をご覧ください"}
           />
         </div>
         <div className="testimonal-controll" data-aos="fade-left">
@@ -40,13 +40,13 @@ const Testimonial = () => {
             onClick={() => swiperRef.current.slideNext()}
           >
             <img src="/assets/img/icon/prev.svg" alt="..." />
-            <span> prev</span>
+            <span> 前</span>
           </button>
           <button
             className="testimonal-next button"
             onClick={() => swiperRef.current.slidePrev()}
           >
-            <span>next</span> <img src="/assets/img/icon/next.svg" alt=".." />
+            <span>次</span> <img src="/assets/img/icon/next.svg" alt=".." />
           </button>
         </div>
       </div>

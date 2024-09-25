@@ -64,8 +64,8 @@ const TeamDetailsSlider = () => {
           keyboard={{ enabled: true }}
           className="mySwiper"
           navigation={{
-            nextEl: ".button-next",
-            prevEl: ".button-prev",
+            nextEl: ".button-prev",
+            prevEl: ".button-next",
           }}
         >
           {slidesData.map((slide) => (

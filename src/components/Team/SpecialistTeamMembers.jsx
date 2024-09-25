@@ -8,20 +8,20 @@ const speciaList = [
   {
     id: 1,
     img: "/assets/img/service/service_1.jpg",
-    title: "Performance Upgrades and Customization",
-    desp: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.",
+    title: "パフォーマンスの向上とカスタマイズ",
+    desp: "時計のパフォーマンスを最大限に引き出し、個々のスタイルに合わせたカスタマイズを提供します。",
   },
   {
     id: 2,
     img: "/assets/img/service/service_2.jpg",
-    title: "Engine Diagnostics and Repair",
-    desp: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.",
+    title: "時計の診断と修理",
+    desp: "高精度な診断と専門的な修理で、お客様の時計を最適な状態に保ちます。",
   },
   {
     id: 3,
     img: "/assets/img/service/service_3.jpg",
-    title: "Tire Services",
-    desp: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.",
+    title: "バッテリー交換サービス",
+    desp: "すべてのタイプの時計に対応した迅速なバッテリー交換サービスを提供します。",
   },
 ];
 
@@ -53,7 +53,7 @@ const SpecialistTeamMembers = ({ team }) => {
                     </Link>
                     <p className="card-desp">{item?.desp}</p>
                     <MoreBtn to={`/service-single/${item?.id}`}>
-                      VIEW MORE
+                      詳細
                     </MoreBtn>
                   </div>
                 </div>
@@ -63,7 +63,7 @@ const SpecialistTeamMembers = ({ team }) => {
           <div className="sidebar width-none">
             <div className="services-content">
               <SectionHeading
-                bgText={"Services"}
+                bgText={"サービス"}
                 title={team?.name}
                 desp={team?.desp}
               />

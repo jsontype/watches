@@ -13,7 +13,7 @@ import Cta from "../components/Cta/Cta";
 const About = () => {
   return (
     <>
-      <AboutPageHero title={"About Us"} />
+      <AboutPageHero title={"会社概要"} />
       <CompanyTab />
       <ChooseUs />
       <AutoCounter />

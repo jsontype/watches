@@ -6,7 +6,7 @@ import CommonPageHero from "../components/CommonPageHero/CommonPageHero";
 const Testimonials = () => {
   return (
     <>
-      <CommonPageHero title={"TESTIMONIAL"} />
+      <CommonPageHero title={"お客様の声"} />
       <Testimonial />
     </>
   );

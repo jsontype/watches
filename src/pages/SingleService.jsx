@@ -14,7 +14,7 @@ const SingleService = () => {
 
   return (
     <>
-      <CommonPageHero title={"Services Detail"} />
+      <CommonPageHero title={"サービスの詳細"} />
       <ServicesDetailContent service={service} />
       <FrequentlyQuestions />
       <Cta />

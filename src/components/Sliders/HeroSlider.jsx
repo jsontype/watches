@@ -90,7 +90,7 @@ const HeroSlider = () => {
                     </div>
                     <div className="ak-height-45 ak-height-lg-30"></div>
                     <div data-swiper-parallax="300">
-                      <ButtonCommon to={item.url}>APPOINTMENT</ButtonCommon>
+                      <ButtonCommon to={item.url}>予約はこちら</ButtonCommon>
                     </div>
                   </div>
                 </div>
@@ -104,7 +104,7 @@ const HeroSlider = () => {
           <div className="ak-swiper-button-prev">
             <div
               className="hero-swiper-prev"
-              onClick={() => swiperRef.current.slideNext()}
+              onClick={() => swiperRef.current.slidePrev()}
             >
               <div className="btn-cricle ak-white-bg-1"></div>
               <div className="btn-arrow">
@@ -126,7 +126,7 @@ const HeroSlider = () => {
           <div className="ak-swiper-button-next">
             <div
               className="hero-swiper-next"
-              onClick={() => swiperRef.current.slidePrev()}
+              onClick={() => swiperRef.current.slideNext()}
             >
               <div className="btn-cricle ak-white-bg-1"></div>
               <div className="btn-arrow ">
@@ -155,7 +155,7 @@ const HeroSlider = () => {
                 <img src="/assets/img/icon/hero-email.svg" alt="..." />
               </div>
               <p className="ak-font-18 ak-white-color ak-semi-bold">
-                example@email.com
+                jsontyper@gmail.com
               </p>
             </div>
           </Link>
@@ -165,7 +165,7 @@ const HeroSlider = () => {
                 <img src="/assets/img/icon/heroaddress.svg" alt="..." />
               </div>
               <p className="ak-font-18 ak-white-color ak-semi-bold">
-                123 Maple Street Toronto, On, Canada
+                東京都足立区千住寿町
               </p>
             </div>
           </Link>
@@ -174,7 +174,7 @@ const HeroSlider = () => {
               <img src="/assets/img/icon/hero-time.svg" alt="..." />
             </div>
             <p className="ak-font-18 ak-white-color ak-semi-bold">
-              Sun - Thu: Open 27/7
+              営業日時：土日・祝日 / 10:00-18:00
             </p>
           </div>
         </div>
@@ -193,7 +193,7 @@ const HeroSlider = () => {
           <img src="/assets/img/icon/linkedin.svg" alt="twitericon" />
         </Link>
         <div className="social-horizontal"></div>
-        <h6 className="social-link">FOLLOW US</h6>
+        <h6 className="social-link">SNS</h6>
       </div>
     </section>
   );

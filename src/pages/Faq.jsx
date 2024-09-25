@@ -8,7 +8,7 @@ import AppointmentForm from "../components/AppointmentForm/AppointmentForm";
 const Faq = () => {
   return (
     <>
-      <CommonPageHero title={"Faq"} />
+      <CommonPageHero title={"よくある質問"} />
       <FrequentlyQuestions />
       <Videos videoId={"VcaAVWtP48A"} />
       <AppointmentForm />

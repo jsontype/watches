@@ -7,7 +7,7 @@ import ServicesSectionTwo from "../components/Services/ServicesSectionTwo";
 const ServicesTwo = () => {
   return (
     <>
-      <CommonPageHero title={"Services"} />
+      <CommonPageHero title={"サービス2"} />
       <ServicesSectionTwo />
       <Cta />
     </>

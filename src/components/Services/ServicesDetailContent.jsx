@@ -10,34 +10,34 @@ const ServicesDetailContent = ({ service }) => {
 
   return (
     <>
-      <div class="ak-height-75 ak-height-lg-80"></div>
-      <div class="d-flex justify-content-center">
-        <div class="sticky-content container">
-          <div class="content">
-            <div class="single-blog-list" data-aos="fade-up">
-              <h4 class="single-blog-title">{title}</h4>
-              <p class="single-blog-desp">{description}</p>
+      <div className="ak-height-75 ak-height-lg-80"></div>
+      <div className="d-flex justify-content-center">
+        <div className="sticky-content container">
+          <div className="content">
+            <div className="single-blog-list" data-aos="fade-up">
+              <h4 className="single-blog-title">{title}</h4>
+              <p className="single-blog-desp">{description}</p>
               <img
                 src="/assets/img/service/services-single.jpg"
                 data-aos="fade-up"
-                class="img-fluid"
+                className="img-fluid"
                 alt="..."
               />
-              <div class="ak-height-50 ak-height-lg-50"></div>
+              <div className="ak-height-50 ak-height-lg-50"></div>
             </div>
             {services?.map((service, index) => (
-              <div class="single-blog-list" data-aos="fade-up">
-                <h4 class="single-blog-title">
+              <div className="single-blog-list" data-aos="fade-up" key={service?.id || index}>
+                <h4 className="single-blog-title">
                   {index + 1}.{service?.title}
                 </h4>
-                <p class="single-blog-desp">{service?.description}</p>
+                <p className="single-blog-desp">{service?.description}</p>
               </div>
             ))}
           </div>
-          <div class="sidebar">
-            <div class="d-flex flex-column gap-4 align-items-xxl-end">
+          <div className="sidebar">
+            <div className="d-flex flex-column gap-4 align-items-xxl-end">
               {similar_services?.map((similar_item, index) => (
-                <div className="service-card-style-2" data-aos="fade-up">
+                <div className="service-card-style-2" data-aos="fade-up" key={similar_item.id}>
                   <div className="service-icon">
                     <img src={similar_item.icon} alt={similar_item.title} />
                   </div>
@@ -53,7 +53,7 @@ const ServicesDetailContent = ({ service }) => {
                       to={`/service-single/${similar_item.id}`}
                       className="more-btn"
                     >
-                      VIEW MORE
+                      詳細
                     </MoreBtn>
                   </div>
                 </div>

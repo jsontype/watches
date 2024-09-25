@@ -10,7 +10,7 @@ import imageData from "../dataJson/galleryImgData.json";
 const Gallery = () => {
   return (
     <>
-      <CommonPageHero title={"Gallery"} />
+      <CommonPageHero title={"ギャラリー"} />
       <div className="container">
         <div className="ak-height-75 ak-height-lg-80"></div>
         <LightGallery

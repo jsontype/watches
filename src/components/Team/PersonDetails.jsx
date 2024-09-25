@@ -2,11 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 const personData = {
   id: 1,
-  name: "Michael Jack",
-  title: "Founder of Company",
+  name: "マイケル・ジャック",
+  title: "会社の創設者",
   quote:
-    "“There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected humour, or randomised”",
-  image: "/assets/img/team/ceo.jpg",
+    "“さまざまな種類のロレム・イプサムの文章が存在しますが、ほとんどは何らかの形で変更されており、ユーモアやランダム性が注入されています。”",
+  image: "/assets/img/team/ceo.png",
   videoLink: "https://www.youtube.com/watch?v=VcaAVWtP48A",
 };
 
@@ -65,7 +65,7 @@ const PersonDetails = () => {
           <div className="d-flex gap-3 align-items-center">
             <div>
               <Link to={`/team-member/${id}`} className="more-btn">
-                VIEW MORE
+                詳細
               </Link>
             </div>
           </div>

@@ -9,7 +9,7 @@ import membersData from "../dataJson/teamMembersData.json";
 const Team = () => {
   return (
     <>
-      <CommonPageHero title={"Team"} />
+      <CommonPageHero title={"チーム"} />
       <PersonDetails />
       <div className="container">
         <div className="all-members">

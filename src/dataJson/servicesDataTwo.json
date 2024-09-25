@@ -1,56 +1,56 @@
 [
     {
         "id": 1,
-        "title": "Diagnostic Services",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-        "icon": "/assets/img/icon/service-icon-1.svg"
+        "title": "時計診断サービス",
+        "description": "時計の機能とパフォーマンスをチェックし、問題を特定するためのサービスです。",
+        "icon": "/assets/img/icon/service_logo_big.png"
     },
     {
         "id": 2,
-        "title": "Routine Maintenance",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "title": "定期メンテナンス",
+        "description": "時計の長寿命を確保するための定期的なメンテナンスサービスを提供します。",
         "icon": "/assets/img/icon/service-icon-2.svg"
     },
     {
         "id": 3,
-        "title": "Brake System Repair",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "title": "修理サービス",
+        "description": "故障した時計の部品を修理し、元の状態に戻すサービスです。",
         "icon": "/assets/img/icon/service-icon-3.svg"
     },
     {
         "id": 4,
-        "title": "Engine Repair",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "title": "機械メンテナンス",
+        "description": "時計内部の機械部品のクリーニングと調整を行い、性能を最大限に引き出します。",
         "icon": "/assets/img/icon/service-icon-4.svg"
     },
     {
         "id": 5,
-        "title": "Transmission Services",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "title": "バッテリー交換サービス",
+        "description": "あらゆるタイプの時計のバッテリーを迅速に交換し、最適なパフォーマンスを保証します。",
         "icon": "/assets/img/icon/service-icon-5.svg"
     },
     {
         "id": 6,
-        "title": "Electrical System",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "title": "外装クリーニング",
+        "description": "時計の外装を丁寧にクリーニングし、美しさを保つサービスです。",
         "icon": "/assets/img/icon/service-icon-6.svg"
     },
     {
         "id": 7,
-        "title": "Steering Repair",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "title": "ベルト交換サービス",
+        "description": "お好みに合わせた時計ベルトを選び、専門的に交換します。",
         "icon": "/assets/img/icon/service-icon-7.svg"
     },
     {
         "id": 8,
-        "title": "Heating Services",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "title": "水分テストサービス",
+        "description": "時計の防水性能をテストし、漏水のリスクを防ぎます。",
         "icon": "/assets/img/icon/service-icon-8.svg"
     },
     {
         "id": 9,
-        "title": "Tire Services",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "title": "カスタムデザインサービス",
+        "description": "オーダーメイドの時計デザインや修理に対応し、個性的なスタイルを提供します。",
         "icon": "/assets/img/icon/service-icon-9.svg"
     }
 ]

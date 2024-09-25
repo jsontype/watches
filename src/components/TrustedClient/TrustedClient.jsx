@@ -9,9 +9,6 @@ const imgList = [
   "/assets/img/client/trusted-client_5.png",
   "/assets/img/client/trusted-client_6.png",
   "/assets/img/client/trusted-client_7.png",
-  "/assets/img/client/trusted-client_1.png",
-  "/assets/img/client/trusted-client_2.png",
-  "/assets/img/client/trusted-client_3.png",
 ];
 
 const TrustedClient = () => {
@@ -20,7 +17,7 @@ const TrustedClient = () => {
     <div className="container">
       <div className="ak-height-125 ak-height-lg-80"></div>
       <div className="ak-slider ak-trusted-client-slider">
-        <h4 className="title">Trusted Client</h4>
+        <h4 className="title">クライアント</h4>
         <Swiper
           speed={1000}
           loop={true}

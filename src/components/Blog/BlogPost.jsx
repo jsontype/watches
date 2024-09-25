@@ -39,7 +39,7 @@ const BlogPost = ({ post }) => {
         <div className="primary-color-border"></div>
         <div className="mt-3">
           <div className="d-flex align-items-center">
-            <p className="me-5">Social Share:</p>
+            <p className="me-5">SNS:</p>
             <div className="social-icon">
               <Link to="https://www.facebook.com/">
                 <img src="/assets/img/icon/facebookicon.svg" alt="..." />

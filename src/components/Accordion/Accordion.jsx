@@ -3,29 +3,29 @@ import AccordionItem from "./AccordionItem";
 
 const faqItems = [
   {
-    title: "What services do you offer at your auto repair shop?",
+    title: "時計の修理やメンテナンスはどのようなサービスを提供していますか？",
     content:
-      "Yes, we provide a warranty on our auto repairs. Please contact us for more details.",
+      "当店では時計の修理、オーバーホール、電池交換、外装のクリーニングなど、さまざまなサービスを提供しています。",
   },
   {
-    title: "How often should I get my car serviced?",
+    title: "時計のメンテナンスはどのくらいの頻度で行うべきですか？",
     content:
-      "It is recommended to service your car every 5,000 to 7,500 miles, or as specified in your vehicle’s manual.",
+      "一般的には3〜5年ごとにオーバーホールを行うことをおすすめしますが、時計の種類や使用頻度によって異なる場合があります。",
   },
   {
-    title: "How do I know if my brakes need to be replaced?",
+    title: "時計のバンドやベルトの交換はできますか？",
     content:
-      "If you hear a squealing noise, feel vibrations, or notice that it takes longer to stop, it may be time to replace your brakes.",
+      "はい、当店ではバンドやベルトの交換も承っております。さまざまな素材やデザインからお選びいただけます。",
   },
   {
-    title: "What steps can I take between services?",
+    title: "防水性能が低下しているかどうかを確認する方法はありますか？",
     content:
-      "Regularly check tire pressure, oil levels, and keep the car clean. Ensure timely maintenance as per the vehicle’s manual.",
+      "防水性能が心配な場合、定期的に防水テストを行うことをおすすめします。水漏れや曇りが見られる場合は、早めに修理を依頼してください。",
   },
   {
-    title: "Do you provide warranty on your auto repairs?",
+    title: "修理に保証はついていますか？",
     content:
-      "Yes, we provide a warranty on our auto repairs. Please contact us for more details.",
+      "はい、当店の修理には保証がついております。詳細についてはお気軽にお問い合わせください。",
   },
 ];
 

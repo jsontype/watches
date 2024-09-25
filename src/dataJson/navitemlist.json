@@ -1,80 +1,80 @@
 [
     {
-        "title": "Home",
+        "title": "ホーム",
         "link": "/",
         "key": "home"
     },
     {
-        "title": "About",
+        "title": "会社概要",
         "link": "/about",
         "key": "about"
     },
     {
-        "title": "Service",
+        "title": "サービス",
         "link": "/service",
         "key": "service",
         "childern": [
             {
-                "title": "Service",
+                "title": "サービス1",
                 "link": "/service",
                 "key": "service1"
             },
             {
-                "title": "Service Two",
+                "title": "サービス2",
                 "link": "/service-two",
                 "key": "servicetwo"
             }
         ]
     },
     {
-        "title": "Blog",
+        "title": "ブログ",
         "link": "/blog",
         "key": "blog"
     },
     {
-        "title": "Pages",
+        "title": "ページ一覧",
         "link": "#",
         "key": "pages",
         "childern": [
             {
-                "title": "Team",
+                "title": "チーム紹介",
                 "link": "/team",
                 "key": "team"
             },
             {
-                "title": "Appointment",
+                "title": "予約",
                 "link": "/appointment",
                 "key": "appointment"
             },
             {
-                "title": "Pricing",
+                "title": "料金プラン",
                 "link": "/pricing",
                 "key": "pricing"
             },
             {
-                "title": "Testimonial",
+                "title": "お客様の声",
                 "link": "/testimonial",
                 "key": "testimonial"
             },
             {
-                "title": "Gallery",
+                "title": "ギャラリー",
                 "link": "/gallery",
                 "key": "gallery"
             },
             {
-                "title": "Faq",
+                "title": "よくある質問",
                 "link": "/faq",
                 "key": "faq"
             },
             {
-                "title": "Comming Soon",
+                "title": "近日公開",
                 "link": "/comming-soon",
                 "key": "commingsoon"
             }
         ]
     },
     {
-        "title": "Contact",
+        "title": "お問い合わせ",
         "link": "/contact",
         "key": "contact"
     }

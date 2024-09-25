@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import ModalVideo from "react-modal-video";
 
-import aboutVideoBg from "/assets/img/bg/car_video_bg.jpg";
+import aboutVideoBg from "/assets/img/bg/watches_for_youtube.jpg";
 
-const Videos = ({ videoId }) => {
+const Videos = () => {
   const [isOpen, setOpen] = useState(false);
+  const videoId = "xIytVXXBycQ";
   return (
     <>
       <div className="ak-height-150 ak-height-lg-60"></div>
@@ -20,6 +21,11 @@ const Videos = ({ videoId }) => {
           src={aboutVideoBg}
           alt="..."
           className="video-section-bg-img ak-bg"
+          style={{
+            width: '100%',
+            height: 'auto',
+            objectFit: 'cover',
+          }}
           data-aos="zoom-out-down"
           data-aos-duration="1000"
           data-aos-delay="200"

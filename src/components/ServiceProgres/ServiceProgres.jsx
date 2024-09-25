@@ -5,23 +5,23 @@ const serviceProgresData = [
   {
     id: 1,
     number: 1,
-    icon: "/assets/img/icon/speedome.svg",
-    title: "PERFOMANCE CHECK",
-    desp: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.",
+    icon: "/assets/img/icon/service_logo.png",
+    title: "修理サービス",
+    desp: "- 時計のメンテナンスをもっと手軽に -",
   },
   {
     id: 2,
     number: 2,
-    icon: "/assets/img/icon/car-repair.svg",
-    title: "AUTO REPAIR",
-    desp: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.",
+    icon: "/assets/img/icon/service_logo.png",
+    title: "コーディネーターサービス",
+    desp: "- 時計選びのエキスパートがあなたをサポート -",
   },
   {
     id: 3,
     number: 3,
-    icon: "/assets/img/icon/car.svg",
-    title: "FLEET SERVICES",
-    desp: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.",
+    icon: "/assets/img/icon/service_logo.png",
+    title: "高価買取・低価格販売",
+    desp: "- 大切な時計を最高の価格で -",
   },
 ];
 

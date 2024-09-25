@@ -23,7 +23,7 @@ const BlogCard = ({ post }) => {
           </div>
           <div className="blog-footer-info">
             <MoreBtn to={`/blog-single/${post.id}`} className="more-btn">
-              READ MORE
+              記事を読む
             </MoreBtn>
           </div>
         </div>
