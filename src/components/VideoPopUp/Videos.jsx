@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import ModalVideo from "react-modal-video";
+import React, { useState } from 'react'
+import ModalVideo from 'react-modal-video'
 
 import aboutVideoBg from "/assets/img/bg/watches_for_youtube.jpg";
 
@@ -37,7 +37,7 @@ const Videos = () => {
         </button>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Videos;
+export default Videos

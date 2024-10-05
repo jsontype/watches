@@ -1,33 +1,30 @@
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useEffect, useState, useCallback } from 'react'
 
 const ScrollUpButton = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false)
 
-  const handleScrollUp = useCallback((e) => {
-    e.preventDefault();
+  const handleScrollUp = useCallback(e => {
+    e.preventDefault()
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
-    });
-  }, []);
+      behavior: 'smooth',
+    })
+  }, [])
 
   const handleScroll = useCallback(() => {
-    const scrollPosition = window.scrollY;
-    setIsVisible(scrollPosition >= 350);
-  }, []);
+    const scrollPosition = window.scrollY
+    setIsVisible(scrollPosition >= 350)
+  }, [])
 
   useEffect(() => {
-    document.addEventListener("scroll", handleScroll);
+    document.addEventListener('scroll', handleScroll)
     return () => {
-      document.removeEventListener("scroll", handleScroll);
-    };
-  }, [handleScroll]);
+      document.removeEventListener('scroll', handleScroll)
+    }
+  }, [handleScroll])
 
   return (
-    <span
-      className={`ak-scrollup ${isVisible ? "ak-scrollup-show" : ""}`}
-      onClick={handleScrollUp}
-    >
+    <span className={`ak-scrollup ${isVisible ? 'ak-scrollup-show' : ''}`} onClick={handleScrollUp}>
       <svg
         width="20"
         height="20"
@@ -41,7 +38,7 @@ const ScrollUpButton = () => {
         />
       </svg>
     </span>
-  );
-};
+  )
+}
 
-export default ScrollUpButton;
+export default ScrollUpButton

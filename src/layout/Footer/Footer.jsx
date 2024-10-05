@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import TextAnimation from "../../components/TextAnimation/TextAnimation";
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+import TextAnimation from '../../components/TextAnimation/TextAnimation'
 
 const footerDataArray = [
   {
@@ -10,8 +10,8 @@ const footerDataArray = [
     desp: "業界の専門家による圧倒的なサービスをご提供します。お得な価格でのプロフェッショナルな時計修理、個別のショッピング体験、高価買取、自社製作のオリジナル時計も取り扱っています。",
   },
   {
-    className: "footer-menu-one",
-    dataAosDelay: "50",
+    className: 'footer-menu-one',
+    dataAosDelay: '50',
     links: [
       { title: "会社概要", link: "/about" },
       { title: "サービス", link: "/service" },
@@ -21,8 +21,8 @@ const footerDataArray = [
     ],
   },
   {
-    className: "footer-menu-two",
-    dataAosDelay: "100",
+    className: 'footer-menu-two',
+    dataAosDelay: '100',
     links: [
       { title: "予約", link: "/appointment" },
       { title: "ブログ / ニュース", link: "/blog" },
@@ -36,26 +36,26 @@ const footerDataArray = [
     address: "東京都足立区千住寿町",
     email: "jsontyper@gmail.com",
   },
-];
+]
 
 const Footer = () => {
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = e => {
+    e.preventDefault()
     if (validateEmail(email)) {
       setMessage("購読ありがとうございます！");
       setEmail("");
     } else {
       setMessage("正しいメールアドレスとご登録ください。");
     }
-  };
+  }
 
-  const validateEmail = (email) => {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(String(email).toLowerCase());
-  };
+  const validateEmail = email => {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    return re.test(String(email).toLowerCase())
+  }
 
   return (
     <>
@@ -92,7 +92,7 @@ const Footer = () => {
                     placeholder="メールアドレスを入力..."
                     className="email-input"
                     value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    onChange={e => setEmail(e.target.value)}
                     required
                   />
                   <button type="submit" className="submit-btn">
@@ -168,10 +168,7 @@ const Footer = () => {
                     <p className="adress-title">所在地とお問い合わせ</p>
                     <Link to="#" className="location">
                       <span className="me-1">
-                        <img
-                          src="/assets/img/icon/location.svg"
-                          alt="Location"
-                        />
+                        <img src="/assets/img/icon/location.svg" alt="Location" />
                       </span>
                       {item.address}
                     </Link>
@@ -183,10 +180,7 @@ const Footer = () => {
                     </Link>
                     <p className="date">
                       <span className="me-1">
-                        <img
-                          src="/assets/img/icon/calender.svg"
-                          alt="Calendar"
-                        />
+                        <img src="/assets/img/icon/calender.svg" alt="Calendar" />
                       </span>
                       営業日時：土日・祝日 / 10:00-18:00
                     </p>
@@ -198,9 +192,7 @@ const Footer = () => {
           <div className="ak-height-70 ak-height-lg-30"></div>
           <div className="primary-color-border"></div>
           <div className="copy-right">
-            <p className="title  text-hover-animaiton">
-              Copyright 2024, All Right reserved
-            </p>
+            <p className="title  text-hover-animaiton">Copyright 2024, All Right reserved</p>
             <div className="social-icon">
               <Link to="https://www.facebook.com/">
                 <img src="/assets/img/icon/facebookicon.svg" alt="..." />
@@ -216,7 +208,7 @@ const Footer = () => {
         </div>
       </footer>
     </>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

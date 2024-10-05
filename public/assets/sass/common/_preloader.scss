@@ -251,12 +251,7 @@ $spin-deg: 36deg;
           $border-color 54%,
           transparent 55%
         ),
-        radial-gradient(
-          $border-color 29%,
-          transparent 30%,
-          transparent 50%,
-          $border-color 51%
-        ),
+        radial-gradient($border-color 29%, transparent 30%, transparent 50%, $border-color 51%),
         $background-color;
       animation-name: spin;
     }

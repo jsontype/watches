@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 
-import ContactForm from "../components/ContactUs/ContactForm";
-import ContactInfo from "../components/ContactUs/ContactInfo";
+import ContactForm from '../components/ContactUs/ContactForm'
+import ContactInfo from '../components/ContactUs/ContactInfo'
 
 const Contact = () => {
   return (
@@ -9,7 +9,7 @@ const Contact = () => {
       <ContactForm />
       <ContactInfo />
     </>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

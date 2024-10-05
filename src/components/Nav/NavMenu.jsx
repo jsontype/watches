@@ -1,28 +1,28 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import MenuItem from "./MenuItem";
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+import MenuItem from './MenuItem'
 
 // import logo from "/assets/img/icon/logo.svg";s
 
-import navitemlist from "../../dataJson/navitemlist.json";
+import navitemlist from '../../dataJson/navitemlist.json'
 
 export default function NavMenu() {
-  const [navBar, setNavbar] = useState("");
-  const [navlist, setNavList] = useState("");
+  const [navBar, setNavbar] = useState('')
+  const [navlist, setNavList] = useState('')
 
   const navBarShow = () => {
-    if (navBar == "") {
-      setNavbar("ak-toggle_active");
+    if (navBar == '') {
+      setNavbar('ak-toggle_active')
     } else {
-      setNavbar("");
+      setNavbar('')
     }
 
-    if (navlist == "") {
-      setNavList("ak-show-moblie-nav-list");
+    if (navlist == '') {
+      setNavList('ak-show-moblie-nav-list')
     } else {
-      setNavList("");
+      setNavList('')
     }
-  };
+  }
 
   return (
     <div className="ak-main_header">
@@ -37,14 +37,10 @@ export default function NavMenu() {
             <div className="ak-nav ak-medium">
               <ul id="ak-nav_list" className={`ak-nav_list ${navlist}`}>
                 {navitemlist?.map((item, i) => {
-                  return <MenuItem props={item} key={i} />;
+                  return <MenuItem props={item} key={i} />
                 })}
               </ul>
-              <span
-                onClick={() => navBarShow()}
-                id="navBar"
-                className={`ak-munu_toggle ${navBar}`}
-              >
+              <span onClick={() => navBarShow()} id="navBar" className={`ak-munu_toggle ${navBar}`}>
                 <span></span>
               </span>
             </div>
@@ -64,5 +60,5 @@ export default function NavMenu() {
         </div>
       </div>
     </div>
-  );
+  )
 }

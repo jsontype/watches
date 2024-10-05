@@ -21,7 +21,7 @@
       margin: 0;
     }
     &:after {
-      content: "+";
+      content: '+';
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
@@ -30,7 +30,7 @@
       font-size: 24px;
     }
     &.active:after {
-      content: "-";
+      content: '-';
     }
   }
   .ak-accordion-tab {
