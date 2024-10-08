@@ -3,7 +3,7 @@
         "id": 1,
         "title": "時計診断サービス",
         "description": "時計の機能とパフォーマンスをチェックし、問題を特定するためのサービスです。",
-        "icon": "/assets/img/icon/service_logo_big.png"
+        "icon": "/assets/img/icon/service_logo.png"
     },
     {
         "id": 2,
