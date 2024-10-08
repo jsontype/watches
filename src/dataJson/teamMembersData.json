@@ -1,110 +1,110 @@
 [
-  {
-    "id": 1,
-    "name": "Darrell T. Beedle",
-    "title": "Lead Mechanic",
-    "image": "/assets/img/member/member_1.jpg",
-    "desp": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected humour, or randomised. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected humour, or randomised.",
-    "socialLinks": {
-      "linkedin": "https://www.facebook.com/",
-      "facebook": "https://bd.linkedin.com/",
-      "twitter": "https://www.instagram.com/"
+    {
+        "id": 1,
+        "name": "ジョージ・ビードル",
+        "title": "リードメカニック",
+        "image": "/assets/img/member/member_1.png",
+        "desp": "数多くの異なる経験を持つメカニックとして、ユーモアと創造力を大切にしながら、完璧なメンテナンスと修理を行っています。お客様の車が最良の状態で走り続けることを私の使命としています。",
+        "socialLinks": {
+            "linkedin": "https://www.facebook.com/",
+            "facebook": "https://bd.linkedin.com/",
+            "twitter": "https://www.instagram.com/"
+        },
+        "contact": {
+            "address": "2118 Thornridge Cir, 35624",
+            "email": "example@example.com",
+            "phone": "+7 (903) 679-96-15",
+            "website": "www.website.com"
+        }
     },
-    "contact": {
-      "address": "2118 Thornridge Cir, 35624",
-      "email": "example@example.com",
-      "phone": "+7 (903) 679-96-15",
-      "website": "www.website.com"
-    }
-  },
-  {
-    "id": 2,
-    "name": "Michael Jack",
-    "title": "Service Advisor",
-    "image": "/assets/img/member/member_2.jpg",
-    "desp": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-    "socialLinks": {
-      "linkedin": "https://www.facebook.com/",
-      "facebook": "https://bd.linkedin.com/",
-      "twitter": "https://www.instagram.com/"
+    {
+        "id": 2,
+        "name": "マイケル・ジャック",
+        "title": "サービスアドバイザー",
+        "image": "/assets/img/member/member_2.png",
+        "desp": "業界における豊富な知識と経験をもとに、お客様に最適なサービスを提案します。お客様の満足を第一に考え、どんな問題も迅速に解決することをお約束します。",
+        "socialLinks": {
+            "linkedin": "https://www.facebook.com/",
+            "facebook": "https://bd.linkedin.com/",
+            "twitter": "https://www.instagram.com/"
+        },
+        "contact": {
+            "address": "2118 Thornridge Cir, 35624",
+            "email": "example@example.com",
+            "phone": "+7 (903) 679-96-15",
+            "website": "www.website.com"
+        }
     },
-    "contact": {
-      "address": "2118 Thornridge Cir, 35624",
-      "email": "example@example.com",
-      "phone": "+7 (903) 679-96-15",
-      "website": "www.website.com"
-    }
-  },
-  {
-    "id": 3,
-    "name": "Cathy Sparkman",
-    "title": "Diagnostic Technician",
-    "image": "/assets/img/member/member_3.jpg",
-    "desp": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-    "socialLinks": {
-      "linkedin": "https://www.facebook.com/",
-      "facebook": "https://bd.linkedin.com/",
-      "twitter": "https://www.instagram.com/"
+    {
+        "id": 3,
+        "name": "キャシー・スパーク",
+        "title": "診断技術者",
+        "image": "/assets/img/member/member_3.png",
+        "desp": "長年にわたる経験を活かし、最先端の技術を用いて車の問題を迅速に診断し、確実な修理を提供します。どんな挑戦にも立ち向かい、完璧を目指します。",
+        "socialLinks": {
+            "linkedin": "https://www.facebook.com/",
+            "facebook": "https://bd.linkedin.com/",
+            "twitter": "https://www.instagram.com/"
+        },
+        "contact": {
+            "address": "2118 Thornridge Cir, 35624",
+            "email": "example@example.com",
+            "phone": "+7 (903) 679-96-15",
+            "website": "www.website.com"
+        }
     },
-    "contact": {
-      "address": "2118 Thornridge Cir, 35624",
-      "email": "example@example.com",
-      "phone": "+7 (903) 679-96-15",
-      "website": "www.website.com"
-    }
-  },
-  {
-    "id": 4,
-    "name": "Charles G. Macdonald",
-    "title": "System Technician",
-    "image": "/assets/img/member/member_4.jpg",
-    "desp": "Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "socialLinks": {
-      "linkedin": "https://www.facebook.com/",
-      "facebook": "https://bd.linkedin.com/",
-      "twitter": "https://www.instagram.com/"
+    {
+        "id": 4,
+        "name": "マック・ドナルド",
+        "title": "システム技術者",
+        "image": "/assets/img/member/member_4.png",
+        "desp": "ロレム・イプサムの文章、そして最近ではAldus PageMakerのようなデスクトップ出版ソフトウェアを用いたバージョンが含まれています。",
+        "socialLinks": {
+            "linkedin": "https://www.facebook.com/",
+            "facebook": "https://bd.linkedin.com/",
+            "twitter": "https://www.instagram.com/"
+        },
+        "contact": {
+            "address": "2118 ソーンリッジ サー, 35624",
+            "email": "example@example.com",
+            "phone": "+7 (903) 679-96-15",
+            "website": "www.website.com"
+        }
     },
-    "contact": {
-      "address": "2118 Thornridge Cir, 35624",
-      "email": "example@example.com",
-      "phone": "+7 (903) 679-96-15",
-      "website": "www.website.com"
-    }
-  },
-  {
-    "id": 5,
-    "name": "Anthony M. Lass",
-    "title": "Systems Specialist",
-    "image": "/assets/img/member/member_5.jpg",
-    "desp": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
-    "socialLinks": {
-      "linkedin": "https://www.facebook.com/",
-      "facebook": "https://bd.linkedin.com/",
-      "twitter": "https://www.instagram.com/"
+    {
+        "id": 5,
+        "name": "アンソニー・ラス",
+        "title": "システムスペシャリスト",
+        "image": "/assets/img/member/member_5.png",
+        "desp": "一般的な信念に反して、ロレム・イプサムは単なるランダムなテキストではありません。これは紀元前45年の古典ラテン文学の一部に根ざしており、2000年以上の歴史があります。",
+        "socialLinks": {
+            "linkedin": "https://www.facebook.com/",
+            "facebook": "https://bd.linkedin.com/",
+            "twitter": "https://www.instagram.com/"
+        },
+        "contact": {
+            "address": "2118 ソーンリッジ サー, 35624",
+            "email": "example@example.com",
+            "phone": "+7 (903) 679-96-15",
+            "website": "www.website.com"
+        }
     },
-    "contact": {
-      "address": "2118 Thornridge Cir, 35624",
-      "email": "example@example.com",
-      "phone": "+7 (903) 679-96-15",
-      "website": "www.website.com"
+    {
+        "id": 6,
+        "name": "タイラ・クロフォード",
+        "title": "リードメカニック",
+        "image": "/assets/img/member/member_6.png",
+        "desp": "バージニア州のハンプデン・シドニー大学のラテン語教授リチャード・マククリントックは、ロレム・イプサムの文章から「consectetur」というより珍しいラテン語の単語を調べました。",
+        "socialLinks": {
+            "linkedin": "https://www.facebook.com/",
+            "facebook": "https://bd.linkedin.com/",
+            "twitter": "https://www.instagram.com/"
+        },
+        "contact": {
+            "address": "2118 ソーンリッジ サー, 35624",
+            "email": "example@example.com",
+            "phone": "+7 (903) 679-96-15",
+            "website": "www.website.com"
+        }
     }
-  },
-  {
-    "id": 6,
-    "name": "Tyra Crawford",
-    "title": "Lead Mechanic",
-    "image": "/assets/img/member/member_6.jpg",
-    "desp": "Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage.",
-    "socialLinks": {
-      "linkedin": "https://www.facebook.com/",
-      "facebook": "https://bd.linkedin.com/",
-      "twitter": "https://www.instagram.com/"
-    },
-    "contact": {
-      "address": "2118 Thornridge Cir, 35624",
-      "email": "example@example.com",
-      "phone": "+7 (903) 679-96-15",
-      "website": "www.website.com"
-    }
-  }
 ]

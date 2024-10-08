@@ -1,15 +1,15 @@
-import React from 'react'
+import React from "react";
 
-import Testimonial from '../components/Testimonial/Testimonial'
-import CommonPageHero from '../components/CommonPageHero/CommonPageHero'
+import Testimonial from "../components/Testimonial/Testimonial";
+import CommonPageHero from "../components/CommonPageHero/CommonPageHero";
 
 const Testimonials = () => {
   return (
     <>
-      <CommonPageHero title={'TESTIMONIAL'} />
+      <CommonPageHero title={"お客様の声"} />
       <Testimonial />
     </>
-  )
-}
+  );
+};
 
-export default Testimonials
+export default Testimonials;

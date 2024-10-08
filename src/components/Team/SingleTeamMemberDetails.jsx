@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const SingleTeamMemberDetails = ({ team }) => {
   const {
@@ -8,7 +8,7 @@ const SingleTeamMemberDetails = ({ team }) => {
     desp,
     contact: { address, email, phone, website },
     socialLinks: { linkedin, facebook, twitter },
-  } = team
+  } = team;
 
   return (
     <div className="container">
@@ -28,23 +28,23 @@ const SingleTeamMemberDetails = ({ team }) => {
             <p className="desp">{desp}</p>
             <ul className="address-list">
               <li>
-                <span>Address:</span> {address}
+                <span>住所:</span> {address}
               </li>
               <li>
-                <span>Email:</span> {email}
+                <span>メールアドレス:</span> {email}
               </li>
               <li>
-                <span>Phone:</span> {phone}
+                <span>電話番号:</span> {phone}
               </li>
               <li>
-                <span>Website:</span> {website}
+                <span>ウェブサイト:</span> {website}
               </li>
             </ul>
           </div>
         </div>
       </div>
       <div className="d-flex gap-5 align-items-center mt-5">
-        <p>Follow Me:</p>
+        <p>SNS:</p>
         <div className="member-info-social d-flex gap-3">
           <a href={linkedin} className="icon">
             <img src="/assets/img/icon/linkedinicon.svg" alt="LinkedIn" />
@@ -58,7 +58,7 @@ const SingleTeamMemberDetails = ({ team }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SingleTeamMemberDetails
+export default SingleTeamMemberDetails;

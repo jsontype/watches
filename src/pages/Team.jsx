@@ -1,15 +1,15 @@
-import React from 'react'
+import React from "react";
 
-import CommonPageHero from '../components/CommonPageHero/CommonPageHero'
-import PersonDetails from '../components/Team/PersonDetails'
-import MemberCard from '../components/Team/MemberCard'
+import CommonPageHero from "../components/CommonPageHero/CommonPageHero";
+import PersonDetails from "../components/Team/PersonDetails";
+import MemberCard from "../components/Team/MemberCard";
 
-import membersData from '../dataJson/teamMembersData.json'
+import membersData from "../dataJson/teamMembersData.json";
 
 const Team = () => {
   return (
     <>
-      <CommonPageHero title={'Team'} />
+      <CommonPageHero title={"チーム"} />
       <PersonDetails />
       <div className="container">
         <div className="all-members">
@@ -21,7 +21,7 @@ const Team = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Team
+export default Team;

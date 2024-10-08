@@ -1,15 +1,15 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { CtaBtn } from '../Button/Button'
+import React from "react";
+import { Link } from "react-router-dom";
+import { CtaBtn } from "../Button/Button";
 
 const ctaData = {
-  title: 'Get in touch with our experts',
+  title: "専門家にお問い合わせください",
   description:
-    " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.",
-}
+    " 私たちの時計専門家があなたのニーズにお応えします。修理やカスタマイズ、自社時計の開発についてのご相談をお待ちしております。お気軽にお問い合わせください。",
+};
 
 const Cta = () => {
-  const { title, description } = ctaData
+  const { title, description } = ctaData;
 
   return (
     <div className="container">
@@ -22,11 +22,11 @@ const Cta = () => {
             {title}
           </h2>
           <p className="cta-desp">{description}</p>
-          <CtaBtn to="/contact">GET IN TOUCH WITH US</CtaBtn>
+          <CtaBtn to="/contact">お問い合わせはこちら</CtaBtn>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Cta
+export default Cta;

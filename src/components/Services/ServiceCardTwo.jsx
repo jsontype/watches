@@ -1,6 +1,6 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { MoreBtn } from '../Button/Button'
+import React from "react";
+import { Link } from "react-router-dom";
+import { MoreBtn } from "../Button/Button";
 
 export const ServiceCardTwo = ({ service }) => {
   return (
@@ -15,10 +15,10 @@ export const ServiceCardTwo = ({ service }) => {
           </Link>
           <p className="desp">{service.description}</p>
           <MoreBtn to={`/service-single/${service.id}`} className="more-btn">
-            VIEW MORE
+            詳細
           </MoreBtn>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

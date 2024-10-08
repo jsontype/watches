@@ -1,64 +1,64 @@
-import React from 'react'
-import SectionHeading from '../SectionHeading/SectionHeading'
-import { MoreBtn } from '../Button/Button'
-import TeamCard from './TeamCard'
+import React from "react";
+import SectionHeading from "../SectionHeading/SectionHeading";
+import { MoreBtn } from "../Button/Button";
+import TeamCard from "./TeamCard";
 
 const membersData = [
   {
     id: 1,
-    name: 'Darrell T. Beedle',
-    title: 'Lead Mechanic',
-    image: '/assets/img/member/member_1.jpg',
-    desp: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected humour, or randomised. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected humour, or randomised.',
+    name: "ジョージ・ビードル",
+    title: "リードメカニック",
+    image: "/assets/img/member/member_1.png",
+    desp: "数多くの異なる経験を持つメカニックとして、ユーモアと創造力を大切にしながら、完璧なメンテナンスと修理を行っています。お客様の車が最良の状態で走り続けることを私の使命としています。",
     socialLinks: {
-      linkedin: 'https://www.facebook.com/',
-      facebook: 'https://bd.linkedin.com/',
-      twitter: 'https://www.instagram.com/',
+      linkedin: "https://www.facebook.com/",
+      facebook: "https://bd.linkedin.com/",
+      twitter: "https://www.instagram.com/",
     },
     contact: {
-      address: '2118 Thornridge Cir, 35624',
-      email: 'example@example.com',
-      phone: '+7 (903) 679-96-15',
-      website: 'www.website.com',
+      address: "2118 Thornridge Cir, 35624",
+      email: "example@example.com",
+      phone: "+7 (903) 679-96-15",
+      website: "www.website.com",
     },
   },
   {
     id: 2,
-    name: 'Michael Jack',
-    title: 'Service Advisor',
-    image: '/assets/img/member/member_2.jpg',
-    desp: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    name: "マイケル・ジャック",
+    title: "サービスアドバイザー",
+    image: "/assets/img/member/member_2.png",
+    desp: "業界における豊富な知識と経験をもとに、お客様に最適なサービスを提案します。お客様の満足を第一に考え、どんな問題も迅速に解決することをお約束します。",
     socialLinks: {
-      linkedin: 'https://www.facebook.com/',
-      facebook: 'https://bd.linkedin.com/',
-      twitter: 'https://www.instagram.com/',
+      linkedin: "https://www.facebook.com/",
+      facebook: "https://bd.linkedin.com/",
+      twitter: "https://www.instagram.com/",
     },
     contact: {
-      address: '2118 Thornridge Cir, 35624',
-      email: 'example@example.com',
-      phone: '+7 (903) 679-96-15',
-      website: 'www.website.com',
+      address: "2118 Thornridge Cir, 35624",
+      email: "example@example.com",
+      phone: "+7 (903) 679-96-15",
+      website: "www.website.com",
     },
   },
   {
     id: 3,
-    name: 'Cathy Sparkman',
-    title: 'Diagnostic Technician',
-    image: '/assets/img/member/member_3.jpg',
-    desp: 'It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+    name: "キャシー・スパーク",
+    title: "診断技術者",
+    image: "/assets/img/member/member_3.png",
+    desp: "長年にわたる経験を活かし、最先端の技術を用いて車の問題を迅速に診断し、確実な修理を提供します。どんな挑戦にも立ち向かい、完璧を目指します。",
     socialLinks: {
-      linkedin: 'https://www.facebook.com/',
-      facebook: 'https://bd.linkedin.com/',
-      twitter: 'https://www.instagram.com/',
+      linkedin: "https://www.facebook.com/",
+      facebook: "https://bd.linkedin.com/",
+      twitter: "https://www.instagram.com/",
     },
     contact: {
-      address: '2118 Thornridge Cir, 35624',
-      email: 'example@example.com',
-      phone: '+7 (903) 679-96-15',
-      website: 'www.website.com',
+      address: "2118 Thornridge Cir, 35624",
+      email: "example@example.com",
+      phone: "+7 (903) 679-96-15",
+      website: "www.website.com",
     },
   },
-]
+];
 
 const Teams = () => {
   return (
@@ -67,14 +67,14 @@ const Teams = () => {
       <div className="team-contant">
         <div className="team-heading" data-aos="fade-right">
           <SectionHeading
-            bgText={'Team'}
-            title={'Our Team'}
+            bgText={"チーム"}
+            title={"私たちのチーム"}
             desp={
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+              "私たちのチームは、多様なバックグラウンドと専門知識を持つプロフェッショナルで構成されています。お客様の期待を超えるサービスを提供することに全力を尽くしています。"
             }
           />
           <div className="ak-height-50 ak-height-lg-10"></div>
-          <MoreBtn to={'/team'}>VIEW MORE</MoreBtn>
+          <MoreBtn to={"/team"}>詳細</MoreBtn>
         </div>
         <div
           className="teams"
@@ -91,6 +91,6 @@ const Teams = () => {
         </div>
       </div>
     </div>
-  )
-}
-export default Teams
+  );
+};
+export default Teams;

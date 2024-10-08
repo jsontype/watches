@@ -1,22 +1,22 @@
-import React from 'react'
-import SectionHeading from '../SectionHeading/SectionHeading'
-import { ButtonCommon } from '../Button/Button'
+import React from "react";
+import SectionHeading from "../SectionHeading/SectionHeading";
+import { ButtonCommon } from "../Button/Button";
 
 const chooseUsData = {
-  bgText: 'Feature',
-  title: 'why Choose Us',
-  desp: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's stan.",
-  img: '/assets/img/chooseus/choose-us.png',
+  bgText: "なぜ私たちを選ぶのか",
+  title: "なぜ私たちを選ぶのか",
+  desp: "業界の専門家による圧倒的なサービスをご提供します。お得な価格でのプロフェッショナルな時計修理、個別のショッピング体験、高価買取、自社製作のオリジナル時計も取り扱っています。",
+  img: "/assets/img/chooseus/choose-us.png",
   list: [
-    { title: 'Certified Technicians' },
-    { title: 'Comprehensive Repair Services' },
-    { title: '900 Five Star Reviews' },
-    { title: 'Warranty on Repairs' },
+    { title: "修理(オーバーホール)サービス" },
+    { title: "コーディネーターサービス" },
+    { title: "高価買取・低価格販売" },
+    { title: "自社時計開発" },
   ],
-}
+};
 
 const ChooseUs = () => {
-  const { bgText, title, desp, list, img } = chooseUsData
+  const { bgText, title, desp, list, img } = chooseUsData;
 
   return (
     <section className="container">
@@ -27,23 +27,34 @@ const ChooseUs = () => {
             <SectionHeading bgText={bgText} title={title} desp={desp} />
             <div className="ak-height-60 ak-height-lg-30"></div>
             <div className="stroke-heading-text">
-              {list.map(item => (
-                <h3 key={item.title} className="ak-stroke-text hover-color-changes">
+              {list.map((item) => (
+                <h3
+                  key={item.title}
+                  className="ak-stroke-text hover-color-changes"
+                >
                   {item.title}
                 </h3>
               ))}
             </div>
             <div className="ak-height-60 ak-height-lg-30"></div>
-            <ButtonCommon to="/about"> View More</ButtonCommon>
+            <ButtonCommon to="/about"> 詳細</ButtonCommon>
           </div>
-          <div className="choose-us-img" data-aos="fade-up" data-aos-delay="150">
+          <div
+            className="choose-us-img"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
             <img src={img} alt="..." />
-            <img className="circle-img" src="/assets/img/chooseus/Circle.png" alt="..." />
+            <img
+              className="circle-img"
+              src="/assets/img/chooseus/Circle.png"
+              alt="..."
+            />
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ChooseUs
+export default ChooseUs;

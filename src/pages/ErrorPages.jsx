@@ -6,16 +6,13 @@ export default function ErrorPages() {
     <div className="error-section error-page-bg-img ak-bg ak-center">
       <div className="error-content">
         <h1 className="error-title ak-stroke-number color-white">404</h1>
-        <h2 className="erro-sub-title">Sorry! The Page isn't Found Here</h2>
+        <h2 className="erro-sub-title">申し訳ありません！ページが見つかりません</h2>
         <p className="erro-desp">
-          Fortunately, since it is mainly a client-side issue, it is relatively easy for website
-          owners to fix the 404 error. This article will explain the possible causes of error 404
-          and show four effective methods to resolve it.Fortunately, since it is mainly a
-          client-side issue.
+        幸いなことに、これは主にクライアント側の問題であり、ウェブサイトの所有者が404エラーを修正するのは比較的簡単です。この記事では、404エラーの原因とそれを解決するための4つの効果的な方法を説明します。幸いなことに、これは主にクライアント側の問題です。
         </p>
         <div className="go-to-home">
           <Link to="/" className="common-btn">
-            BACK TO HOME
+            ホームに戻る
           </Link>
         </div>
       </div>

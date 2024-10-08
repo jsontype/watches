@@ -1,23 +1,27 @@
-import React from 'react'
-import Accordion from '../Accordion/Accordion'
+import React from "react";
+import Accordion from "../Accordion/Accordion";
 
-import accordionImg from '/assets/img/accordion-side-img.jpg'
+import accordionImg from "/assets/img/accordion-side-img.jpg";
 
 const contactDetails = {
-  title: ' Frequently Asked Questions',
-  phone: '(406) 555-0120',
-  email: 'example@email.com',
-  address: '901 N Pitt Str., Suite 170, Alexandria, NY, USA',
-  workingHours: 'Sun - Thu: Open 24/7',
-}
+  title: " よくある質問",
+  phone: "+81-70-1543-3733",
+  email: "jsontyper@gmail.com",
+  address: "東京都足立区千住寿町",
+  workingHours: "営業日時：土日・祝日 / 10:00-18:00",
+};
 
 const FrequentlyQuestions = () => {
-  const { title, phone, email, address, workingHours } = contactDetails
+  const { title, phone, email, address, workingHours } = contactDetails;
 
   return (
     <div className="container">
       <div className="ak-height-75 ak-height-lg-80"></div>
-      <h4 className="faq-images-title" data-aos="fade-left" data-aos-delay="700">
+      <h4
+        className="faq-images-title"
+        data-aos="fade-left"
+        data-aos-delay="700"
+      >
         {title}
       </h4>
       <div className="faq-images">
@@ -48,13 +52,19 @@ const FrequentlyQuestions = () => {
               <h3>{email}</h3>
             </div>
             <div className="ak-location">
-              <a href="#" className="d-flex gap-2 location text-hover-animation">
+              <a
+                href="#"
+                className="d-flex gap-2 location text-hover-animation"
+              >
                 <img src="/assets/img/icon/location.svg" alt="Location Icon" />
                 <span>{address}</span>
               </a>
             </div>
             <div className="ak-date-time">
-              <a href="#" className="date text-hover-animation d-flex align-items-center gap-2">
+              <a
+                href="#"
+                className="date text-hover-animation d-flex align-items-center gap-2"
+              >
                 <span>
                   <img src="/assets/img/icon/date-icon.svg" alt="Date Icon" />
                 </span>
@@ -65,7 +75,7 @@ const FrequentlyQuestions = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default FrequentlyQuestions
+export default FrequentlyQuestions;

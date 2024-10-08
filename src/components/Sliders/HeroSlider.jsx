@@ -1,77 +1,87 @@
-import React, { useRef } from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Parallax, Pagination } from 'swiper/modules'
-import { ButtonCommon } from '../Button/Button'
-import { Link } from 'react-router-dom'
+import React, { useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Parallax, Pagination } from "swiper/modules";
+import { ButtonCommon } from "../Button/Button";
+import { Link } from "react-router-dom";
 
 const sliderData = [
   {
     id: 1,
-    title: '修理(オーバーホール)サービス',
-    maintitle: '- 時計のメンテナンスをもっと手軽に -',
-    desp: '機械式時計のオーバーホールを業界最安値の20,000円でご提供。\nクォーツ時計の電池交換もお得な2,000円で対応します。\n訪問の手間は不要、ウェブで簡単申請、宅配便でのスムーズな\n修理サービスをお楽しみください。（送料先払）',
-    url: '/appointment',
-    img: '/assets/img/hero/hero_slider_bg_1.png',
+    title: "修理(オーバーホール)サービス",
+    maintitle: "- 時計のメンテナンスをもっと手軽に -",
+    desp: "機械式時計のオーバーホールを業界最安値の20,000円でご提供。\nクォーツ時計の電池交換もお得な2,000円で対応します。\n訪問の手間は不要、ウェブで簡単申請、宅配便でのスムーズな\n修理サービスをお楽しみください。（送料先払）",
+    url: "/appointment",
+    img: "/assets/img/hero/hero_slider_bg_1.png",
   },
   {
     id: 2,
-    title: 'コーディネーターサービス',
-    maintitle: '- 時計選びのエキスパートがあなたをサポート -',
-    desp: '専門知識豊富な時計コーディネーターが、8時間無料でお客様に\n寄り添い、ぴったりの時計を一緒にお探しします。ご要望に応じた\nパーソナライズされたショッピング体験をぜひお試しください。',
-    url: '/appointment',
-    img: '/assets/img/hero/hero_slider_bg_2.png',
+    title: "コーディネーターサービス",
+    maintitle: "- 時計選びのエキスパートがあなたをサポート -",
+    desp: "専門知識豊富な時計コーディネーターが、8時間無料でお客様に\n寄り添い、ぴったりの時計を一緒にお探しします。ご要望に応じた\nパーソナライズされたショッピング体験をぜひお試しください。",
+    url: "/appointment",
+    img: "/assets/img/hero/hero_slider_bg_2.png",
   },
   {
     id: 3,
-    title: '高価買取・低価格販売',
-    maintitle: '- 大切な時計を最高の価格で -',
-    desp: '高価査定、人気ブランド時計を低価格でご提供中。\nお手持ちの時計を最大限の価値で売りたい方、\nまたは新しい時計をお得に手に入れたい方に最適です。',
-    url: '/appointment',
-    img: '/assets/img/hero/hero_slider_bg_3.png',
+    title: "高価買取・低価格販売",
+    maintitle: "- 大切な時計を最高の価格で -",
+    desp: "高価査定、人気ブランド時計を低価格でご提供中。\nお手持ちの時計を最大限の価値で売りたい方、\nまたは新しい時計をお得に手に入れたい方に最適です。",
+    url: "/appointment",
+    img: "/assets/img/hero/hero_slider_bg_3.png",
   },
   {
     id: 4,
-    title: '自社時計開発',
-    maintitle: '- 独自のスタイルを手に入れる -',
-    desp: '高品質なETAやSelita汎用ムーブメントを使用したオリジナル時計を\n販売中。卓越した技術とデザインを組み合わせた、自信を持って\nおすすめする一本をお選びください。',
-    url: '/appointment',
-    img: '/assets/img/hero/hero_slider_bg_4.png',
+    title: "自社時計開発",
+    maintitle: "- 独自のスタイルを手に入れる -",
+    desp: "高品質なETAやSelita汎用ムーブメントを使用したオリジナル時計を\n販売中。卓越した技術とデザインを組み合わせた、自信を持って\nおすすめする一本をお選びください。",
+    url: "/appointment",
+    img: "/assets/img/hero/hero_slider_bg_4.png",
   },
-]
+];
 
 const HeroSlider = () => {
-  const swiperRef = useRef(null)
+  const swiperRef = useRef(null);
   return (
     <section className="ak-slider ak-slider-hero-1">
       <Swiper
         speed={1000}
         loop={true}
-        slidesPerView={'auto'}
+        slidesPerView={"auto"}
         parallax={true}
         pagination={{
           clickable: true,
-          el: '.hero-swiper-pagination',
+          el: ".hero-swiper-pagination",
           renderBullet: function (index, className) {
-            return '<p className="' + className + '">' + (index + 1) + '</p>'
+            return '<p className="' + className + '">' + (index + 1) + "</p>";
           },
         }}
         modules={[Parallax, Pagination]}
-        onSwiper={swiper => {
-          swiperRef.current = swiper
+        onSwiper={(swiper) => {
+          swiperRef.current = swiper;
         }}
       >
-        {sliderData.map(item => (
+        {sliderData.map((item) => (
           <SwiperSlide key={item.id}>
             <div className="ak-hero ak-style1 slide-inner">
-              <img src={item.img} className="ak-hero-bg ak-bg object-cover" alt="..." />
+              <img
+                src={item.img}
+                className="ak-hero-bg ak-bg object-cover"
+                alt="..."
+              />
               <div className="container">
                 <div className="hero-slider-info">
                   <div className="slider-info">
                     <div className="hero-title">
-                      <h1 className="hero-main-title" data-swiper-parallax="300">
+                      <h1
+                        className="hero-main-title"
+                        data-swiper-parallax="300"
+                      >
                         {item.title}
                       </h1>
-                      <h1 className="hero-main-title-1 style-2" data-swiper-parallax="100">
+                      <h1
+                        className="hero-main-title-1 style-2"
+                        data-swiper-parallax="100"
+                      >
                         {item.maintitle}
                       </h1>
                       <p className="mini-title" data-swiper-parallax="400">
@@ -80,7 +90,7 @@ const HeroSlider = () => {
                     </div>
                     <div className="ak-height-45 ak-height-lg-30"></div>
                     <div data-swiper-parallax="300">
-                      <ButtonCommon to={item.url}>APPOINTMENT</ButtonCommon>
+                      <ButtonCommon to={item.url}>予約はこちら</ButtonCommon>
                     </div>
                   </div>
                 </div>
@@ -92,7 +102,10 @@ const HeroSlider = () => {
       <div className="ak-swiper-controll-hero-1">
         <div className="ak-swiper-navigation-wrap">
           <div className="ak-swiper-button-prev">
-            <div className="hero-swiper-prev" onClick={() => swiperRef.current.slideNext()}>
+            <div
+              className="hero-swiper-prev"
+              onClick={() => swiperRef.current.slidePrev()}
+            >
               <div className="btn-cricle ak-white-bg-1"></div>
               <div className="btn-arrow">
                 <svg
@@ -111,7 +124,10 @@ const HeroSlider = () => {
             </div>
           </div>
           <div className="ak-swiper-button-next">
-            <div className="hero-swiper-next" onClick={() => swiperRef.current.slidePrev()}>
+            <div
+              className="hero-swiper-next"
+              onClick={() => swiperRef.current.slideNext()}
+            >
               <div className="btn-cricle ak-white-bg-1"></div>
               <div className="btn-arrow ">
                 <svg
@@ -138,7 +154,9 @@ const HeroSlider = () => {
               <div className="heartbeat-icon">
                 <img src="/assets/img/icon/hero-email.svg" alt="..." />
               </div>
-              <p className="ak-font-18 ak-white-color ak-semi-bold">example@email.com</p>
+              <p className="ak-font-18 ak-white-color ak-semi-bold">
+                jsontyper@gmail.com
+              </p>
             </div>
           </Link>
           <Link to="#">
@@ -147,7 +165,7 @@ const HeroSlider = () => {
                 <img src="/assets/img/icon/heroaddress.svg" alt="..." />
               </div>
               <p className="ak-font-18 ak-white-color ak-semi-bold">
-                123 Maple Street Toronto, On, Canada
+                東京都足立区千住寿町
               </p>
             </div>
           </Link>
@@ -155,7 +173,9 @@ const HeroSlider = () => {
             <div className="heartbeat-icon">
               <img src="/assets/img/icon/hero-time.svg" alt="..." />
             </div>
-            <p className="ak-font-18 ak-white-color ak-semi-bold">Sun - Thu: Open 27/7</p>
+            <p className="ak-font-18 ak-white-color ak-semi-bold">
+              営業日時：土日・祝日 / 10:00-18:00
+            </p>
           </div>
         </div>
       </div>
@@ -173,10 +193,10 @@ const HeroSlider = () => {
           <img src="/assets/img/icon/linkedin.svg" alt="twitericon" />
         </Link>
         <div className="social-horizontal"></div>
-        <h6 className="social-link">FOLLOW US</h6>
+        <h6 className="social-link">SNS</h6>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default HeroSlider
+export default HeroSlider;

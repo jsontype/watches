@@ -1,6 +1,6 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import CommentForm from '../CommentForm/CommentForm'
+import React from "react";
+import { Link } from "react-router-dom";
+import CommentForm from "../CommentForm/CommentForm";
 
 const BlogPost = ({ post }) => {
   const {
@@ -8,7 +8,7 @@ const BlogPost = ({ post }) => {
     date,
     id,
     blogdetails: { img: singleImg, shortDesp, itemlist },
-  } = post
+  } = post;
 
   return (
     <div className="container container-customize">
@@ -39,7 +39,7 @@ const BlogPost = ({ post }) => {
         <div className="primary-color-border"></div>
         <div className="mt-3">
           <div className="d-flex align-items-center">
-            <p className="me-5">Social Share:</p>
+            <p className="me-5">SNS:</p>
             <div className="social-icon">
               <Link to="https://www.facebook.com/">
                 <img src="/assets/img/icon/facebookicon.svg" alt="..." />
@@ -57,7 +57,7 @@ const BlogPost = ({ post }) => {
       <div className="ak-height-125 ak-height-lg-80"></div>
       <CommentForm blogid={id} />
     </div>
-  )
-}
+  );
+};
 
-export default BlogPost
+export default BlogPost;

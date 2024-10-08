@@ -2,41 +2,39 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import TextAnimation from '../../components/TextAnimation/TextAnimation'
 
-import footerLogo from '/assets/img/icon/footer-logo.svg'
-
 const footerDataArray = [
   {
-    className: 'footer-info',
-    dataAosDelay: '0',
-    phone: '(406) 555-0120',
-    desp: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan. Lorem Ipsum is.",
+    className: "footer-info",
+    dataAosDelay: "0",
+    phone: "+81-70-1543-3733",
+    desp: "業界の専門家による圧倒的なサービスをご提供します。お得な価格でのプロフェッショナルな時計修理、個別のショッピング体験、高価買取、自社製作のオリジナル時計も取り扱っています。",
   },
   {
     className: 'footer-menu-one',
     dataAosDelay: '50',
     links: [
-      { title: 'About', link: '/about' },
-      { title: 'Service', link: '/service' },
-      { title: 'Pricing', link: '/pricing' },
-      { title: 'Team', link: '/team' },
-      { title: 'Contact Us', link: '/contact' },
+      { title: "会社概要", link: "/about" },
+      { title: "サービス", link: "/service" },
+      { title: "料金プラン", link: "/pricing" },
+      { title: "チーム", link: "/team" },
+      { title: "お問い合わせ", link: "/contact" },
     ],
   },
   {
     className: 'footer-menu-two',
     dataAosDelay: '100',
     links: [
-      { title: 'Appointment', link: '/appointment' },
-      { title: 'Blog / News', link: '/blog' },
-      { title: 'FA Question', link: '/faq' },
-      { title: 'Team', link: '/team' },
+      { title: "予約", link: "/appointment" },
+      { title: "ブログ / ニュース", link: "/blog" },
+      { title: "よくある質問", link: "/faq" },
+      { title: "チーム", link: "/team" },
     ],
   },
   {
-    className: 'footer-address',
-    dataAosDelay: '150',
-    address: '901 N Pitt Str., Suite 170 Alexandria, NY, USA',
-    email: 'example@email.com',
+    className: "footer-address",
+    dataAosDelay: "150",
+    address: "東京都足立区千住寿町",
+    email: "jsontyper@gmail.com",
   },
 ]
 
@@ -47,10 +45,10 @@ const Footer = () => {
   const handleSubmit = e => {
     e.preventDefault()
     if (validateEmail(email)) {
-      setMessage('Thank you for subscribing!')
-      setEmail('')
+      setMessage("購読ありがとうございます！");
+      setEmail("");
     } else {
-      setMessage('Please enter a valid email address.')
+      setMessage("正しいメールアドレスとご登録ください。");
     }
   }
 
@@ -78,11 +76,11 @@ const Footer = () => {
               data-aos-delay="200"
               data-aos-duration="1000"
             >
-              Newsletter
+              メールマガジン
             </div>
             <div className="footer-heading-email">
               <h5 className="email-title">
-                Sign up for our newsletter to get weekly updates on exclusive offers and discounts!
+              私たちのメールマガジンに登録して、独占的なオファーや割引に関する週刊更新を受け取りましょう！
               </h5>
               <div>
                 <p id="ak-alert-footer">{message}</p>
@@ -91,7 +89,7 @@ const Footer = () => {
                     type="text"
                     name="footerEmail"
                     id="footerEmail"
-                    placeholder="Enter your email..."
+                    placeholder="メールアドレスを入力..."
                     className="email-input"
                     value={email}
                     onChange={e => setEmail(e.target.value)}
@@ -120,8 +118,9 @@ const Footer = () => {
           <div className="ak-height-70 ak-height-lg-30"></div>
           <div className="primary-color-border"></div>
           <div className="ak-height-35 ak-height-lg-30"></div>
+          {/* ロゴ修正 */}
           <div className="footer-logo">
-            <img src={footerLogo} alt="footer-logo" />
+            <img src="/assets/img/icon/watches_logo_white.png" alt="logo" width="65" />
             <div className="ak-height-15 ak-height-lg-10"></div>
           </div>
           <div className="footer-content">
@@ -139,23 +138,21 @@ const Footer = () => {
                     <div className="ak-height-35 ak-height-lg-30"></div>
                     <div className="d-flex align-items-center gap-3">
                       <div className="heartbeat-icon">
-                        <Link to="tel:(406)555-0120">
+                        <Link to="tel:+81-70-1543-3733">
                           <span className="ak-heartbeat-btn">
                             <img src="/assets/img/icon/phone.svg" alt="..." />
                           </span>
                         </Link>
                       </div>
-                      <TextAnimation
-                        link={'tel:(406)555-0120'}
-                        title={item.phone}
-                        classNamePass="phone white"
-                      />
+                      <span className="phone white" style={{ fontSize: "2.2rem" }}>
+                        {item.phone}
+                      </span>
                     </div>
                   </>
                 )}
                 {item.links && (
                   <div className="footer-menu">
-                    <p className="menu-title">QUICK LINK</p>
+                    <p className="menu-title">リンク一覧</p>
                     {item.links.map((item, idx) => (
                       <TextAnimation
                         key={idx}
@@ -168,7 +165,7 @@ const Footer = () => {
                 )}
                 {item.address && (
                   <div className="footer-address">
-                    <p className="adress-title">LOCATION & CONTACT</p>
+                    <p className="adress-title">所在地とお問い合わせ</p>
                     <Link to="#" className="location">
                       <span className="me-1">
                         <img src="/assets/img/icon/location.svg" alt="Location" />
@@ -185,7 +182,7 @@ const Footer = () => {
                       <span className="me-1">
                         <img src="/assets/img/icon/calender.svg" alt="Calendar" />
                       </span>
-                      Sun - Thu: Open 24/7
+                      営業日時：土日・祝日 / 10:00-18:00
                     </p>
                   </div>
                 )}

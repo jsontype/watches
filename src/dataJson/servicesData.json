@@ -1,32 +1,26 @@
 [
-  {
-    "id": 1,
-    "img": "/assets/img/service/service_1.jpg",
-    "title": "Performance Upgrades and Customization",
-    "desp": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan."
-  },
-  {
-    "id": 2,
-    "img": "/assets/img/service/service_2.jpg",
-    "title": "Engine Diagnostics and Repair",
-    "desp": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan."
-  },
-  {
-    "id": 3,
-    "img": "/assets/img/service/service_3.jpg",
-    "title": "Tire Services",
-    "desp": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan."
-  },
-  {
-    "id": 4,
-    "img": "/assets/img/service/service_4.jpg",
-    "title": "Brake Repair and Maintenance",
-    "desp": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan."
-  },
-  {
-    "id": 5,
-    "img": "/assets/img/service/service_5.jpg",
-    "title": "Oil Change Services",
-    "desp": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan."
-  }
+    {
+        "id": 1,
+        "img": "/assets/img/service/service_1.jpg",
+        "title": "修理(オーバーホール)サービス",
+        "desp": "専門知識豊富な時計コーディネーターが、8時間無料でお客様に\n寄り添い、ぴったりの時計を一緒にお探しします。ご要望に応じた\nパーソナライズされたショッピング体験をぜひお試しください。"
+    },
+    {
+        "id": 2,
+        "img": "/assets/img/service/service_2.jpg",
+        "title": "コーディネーターサービス",
+        "desp": "専門知識豊富な時計コーディネーターが、8時間無料でお客様に\n寄り添い、ぴったりの時計を一緒にお探しします。ご要望に応じた\nパーソナライズされたショッピング体験をぜひお試しください。"
+    },
+    {
+        "id": 3,
+        "img": "/assets/img/service/service_3.jpg",
+        "title": "高価買取・低価格販売",
+        "desp": "高価査定、人気ブランド時計を低価格でご提供中。\nお手持ちの時計を最大限の価値で売りたい方、\nまたは新しい時計をお得に手に入れたい方に最適です。"
+    },
+    {
+        "id": 4,
+        "img": "/assets/img/service/service_4.jpg",
+        "title": "自社時計開発",
+        "desp": "高品質なETAやSelita汎用ムーブメントを使用したオリジナル時計を\n販売中。卓越した技術とデザインを組み合わせた、自信を持って\nおすすめする一本をお選びください。"
+    }
 ]

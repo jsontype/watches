@@ -1,10 +1,17 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
-const PricingCard = ({ title, discountPrice, mainPrice, options, isActive, aosDelay }) => {
+const PricingCard = ({
+  title,
+  discountPrice,
+  mainPrice,
+  options,
+  isActive,
+  aosDelay,
+}) => {
   return (
     <div
-      className={`pricing-card ${isActive ? 'active' : ''}`}
+      className={`pricing-card ${isActive ? "active" : ""}`}
       data-aos="fade-up"
       data-aos-delay={aosDelay}
     >
@@ -25,16 +32,16 @@ const PricingCard = ({ title, discountPrice, mainPrice, options, isActive, aosDe
       </div>
       <Link to="#" className="get-started-btn">
         <span>
-          GET
+          利用
           <span>
             <img src="/assets/img/icon/started-btn.svg" alt="..." />
             <br />
           </span>
-          STARTED
+          開始
         </span>
       </Link>
     </div>
-  )
-}
+  );
+};
 
-export default PricingCard
+export default PricingCard;

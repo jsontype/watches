@@ -1,43 +1,52 @@
-import React, { useRef } from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { EffectFade } from 'swiper/modules'
-import SectionHeading from '../SectionHeading/SectionHeading'
+import React, { useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectFade } from "swiper/modules";
+import SectionHeading from "../SectionHeading/SectionHeading";
 
-import testimaonialBgImg from '/assets/img/bg/testimaonial-img-bg.png'
+import testimaonialBgImg from "/assets/img/bg/testimaonial-img-bg.png";
 
 const sliderData = [
   {
     id: 1,
-    name: 'Roberts Bush',
-    from: 'From Canada',
-    desp: '“There are many variations of passages of Lorem Ipsum available,butthe majority have suffered alteration in some form injected humour, or randomised”',
-    img: '/assets/img/testmaonail/testimaonial.png',
+    name: "キャサリン",
+    from: "カナダより",
+    desp: "“この時計は私の人生の重要な瞬間を共に過ごしてきました。精密な機械と美しいデザインが融合した逸品で、どんな場面でも自信を持たせてくれます。”",
+    img: "/assets/img/testmaonail/testimaonial.png",
   },
   {
     id: 2,
-    name: 'Butthe Bush',
-    from: 'From Canada',
-    desp: '“There are many variations of passages of Lorem Ipsum available,butthe majority have suffered alteration in some form injected humour, or randomised”',
-    img: '/assets/img/testmaonail/testmaonail_1.png',
+    name: "クリス",
+    from: "イギリスより",
+    desp: "“このショップでの体験は本当に素晴らしかったです。スタッフは非常に親切で、私のニーズに合った時計を見つけてくれました。今では毎日身につけている大切なパートナーです。”",
+    img: "/assets/img/testmaonail/testmaonail_1.png",
   },
-]
+];
 
 const Testimonial = () => {
-  const swiperRef = useRef(null)
+  const swiperRef = useRef(null);
   return (
     <div className="container">
       <div className="ak-height-125 ak-height-lg-80"></div>
       <div className="ak-testimonal-controll">
         <div className="testimonal-heading" data-aos="fade-right">
-          <SectionHeading bgText="Testimonial" title={'SEE WHAT OUR Satisfied'} />
+          <SectionHeading
+            bgText="お客様の声"
+            title={"お客様の満足の声をご覧ください"}
+          />
         </div>
         <div className="testimonal-controll" data-aos="fade-left">
-          <button className="testimonal-prev button" onClick={() => swiperRef.current.slideNext()}>
+          <button
+            className="testimonal-prev button"
+            onClick={() => swiperRef.current.slideNext()}
+          >
             <img src="/assets/img/icon/prev.svg" alt="..." />
-            <span> prev</span>
+            <span> 前</span>
           </button>
-          <button className="testimonal-next button" onClick={() => swiperRef.current.slidePrev()}>
-            <span>next</span> <img src="/assets/img/icon/next.svg" alt=".." />
+          <button
+            className="testimonal-next button"
+            onClick={() => swiperRef.current.slidePrev()}
+          >
+            <span>次</span> <img src="/assets/img/icon/next.svg" alt=".." />
           </button>
         </div>
       </div>
@@ -47,14 +56,14 @@ const Testimonial = () => {
           <Swiper
             speed={1000}
             loop={true}
-            slidesPerView={'auto'}
-            effect={'fade'}
+            slidesPerView={"auto"}
+            effect={"fade"}
             modules={[EffectFade]}
-            onSwiper={swiper => {
-              swiperRef.current = swiper
+            onSwiper={(swiper) => {
+              swiperRef.current = swiper;
             }}
           >
-            {sliderData.map(item => (
+            {sliderData.map((item) => (
               <SwiperSlide key={item.id}>
                 <div className="testimonal-info ak-style1">
                   <div className="slider-info">
@@ -96,7 +105,11 @@ const Testimonial = () => {
                     </div>
                     <h4 className="desp">{item.desp}</h4>
                   </div>
-                  <img src={item.img} alt="..." className="testimaonial-slide-img" />
+                  <img
+                    src={item.img}
+                    alt="..."
+                    className="testimaonial-slide-img"
+                  />
                 </div>
               </SwiperSlide>
             ))}
@@ -107,7 +120,7 @@ const Testimonial = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Testimonial
+export default Testimonial;

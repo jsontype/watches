@@ -1,7 +1,7 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
-import commpagesbg from '/assets/img/bg/commpagesbg.jpg'
+import commpagesbg from "/assets/img/bg/commpagesbg.jpg";
 
 const AboutPageHero = ({ title }) => {
   return (
@@ -13,14 +13,14 @@ const AboutPageHero = ({ title }) => {
         <div className="about-page-title">
           <h3 className="page-title">{title}</h3>
           <div className="d-flex gap-2 align-items-center">
-            <Link to="/">Home</Link>
+            <Link to="/">ホーム</Link>
             <p> / {title}</p>
           </div>
         </div>
       </div>
       <div className="ak-height-100 ak-height-lg-100"></div>
     </div>
-  )
-}
+  );
+};
 
-export default AboutPageHero
+export default AboutPageHero;
